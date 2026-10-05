@@ -1,0 +1,20 @@
+System Switch
+Copyright 2026 Gianluca Bailo
+
+This repository contains original code and data released under the Apache License 2.0
+(see LICENSE).
+
+It builds on third-party work:
+
+- doomLaya (https://github.com/azalio/doomLaya), Apache License 2.0. The patches in
+  patches/ modify doomLaya's agent.py; src/build_testset.py runs doomLaya's own oracle
+  (the `gold` function of its training/build_dataset.py) on new games; the test set in
+  data/ is made of game states produced by doomLaya's pipeline. See doomLaya's NOTICE.
+- The "System One" typed-decision models evaluated here (Laya, Kev, Lev, Julia-1,
+  Clef-Flash, Strands Decider) and the thinkers (Qwen3.6-35B-A3B, Gemma 4 26B-A4B-it),
+  each under its own licence. No model weights are included.
+- doomGemma, the Gemma 4 E2B LoRA used as a trained reference
+  (https://github.com/dexmac221/doomgemma), Apache License 2.0; Gemma under the Gemma
+  Terms of Use (https://ai.google.dev/gemma/terms).
+- llama.cpp (https://github.com/ggml-org/llama.cpp), MIT License.
+- FreeDoom and ViZDoom, under their respective licences (not included).

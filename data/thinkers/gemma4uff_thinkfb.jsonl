@@ -1,0 +1,600 @@
+{"i": 1, "kind": "command", "label": "open_door", "choice": "open_door", "right": true, "reasoning_chars": 2553, "tokens": 846, "ms": 28703}
+{"i": 2, "kind": "command", "label": "open_door", "choice": "open_door", "right": true, "reasoning_chars": 1594, "tokens": 523, "ms": 16935}
+{"i": 3, "kind": "command", "label": "exit", "choice": "collect_25", "right": false, "reasoning_chars": 0, "tokens": 20, "ms": 148065, "fallback": true}
+{"i": 5, "kind": "command", "label": "open_door", "choice": "open_door", "right": true, "reasoning_chars": 1750, "tokens": 572, "ms": 18868}
+{"i": 6, "kind": "command", "label": "exit", "choice": "collect_53", "right": false, "reasoning_chars": 0, "tokens": 17, "ms": 147011, "fallback": true}
+{"i": 9, "kind": "command", "label": "collect_65", "choice": "collect_65", "right": true, "reasoning_chars": 2260, "tokens": 749, "ms": 25188}
+{"i": 10, "kind": "command", "label": "exit", "choice": "collect_35", "right": false, "reasoning_chars": 8443, "tokens": 2836, "ms": 99938}
+{"i": 12, "kind": "command", "label": "exit", "choice": "exit", "right": true, "reasoning_chars": 2397, "tokens": 665, "ms": 22242}
+{"i": 13, "kind": "command", "label": "shoot_11", "choice": "collect_44", "right": false, "reasoning_chars": 2461, "tokens": 892, "ms": 31546}
+{"i": 14, "kind": "command", "label": "collect_29", "choice": "collect_29", "right": true, "reasoning_chars": 4236, "tokens": 1391, "ms": 49320}
+{"i": 17, "kind": "command", "label": "open_door", "choice": "open_door", "right": true, "reasoning_chars": 1790, "tokens": 590, "ms": 20472}
+{"i": 18, "kind": "command", "label": "collect_15", "choice": "collect_15", "right": true, "reasoning_chars": 2594, "tokens": 862, "ms": 30309}
+{"i": 19, "kind": "command", "label": "exit", "choice": "collect_52", "right": false, "reasoning_chars": 2424, "tokens": 801, "ms": 28342}
+{"i": 20, "kind": "command", "label": "collect_22", "choice": "collect_22", "right": true, "reasoning_chars": 0, "tokens": 17, "ms": 151186, "fallback": true}
+{"i": 21, "kind": "command", "label": "collect_23", "choice": "collect_23", "right": true, "reasoning_chars": 5905, "tokens": 2020, "ms": 74306}
+{"i": 22, "kind": "command", "label": "collect_15", "choice": "collect_15", "right": true, "reasoning_chars": 3430, "tokens": 1137, "ms": 41115}
+{"i": 23, "kind": "command", "label": "shoot_10", "choice": "collect_14", "right": false, "reasoning_chars": 0, "tokens": 22, "ms": 154125, "fallback": true}
+{"i": 24, "kind": "command", "label": "open_door", "choice": "open_door", "right": true, "reasoning_chars": 1968, "tokens": 701, "ms": 25076}
+{"i": 25, "kind": "command", "label": "open_door", "choice": "open_door", "right": true, "reasoning_chars": 2066, "tokens": 695, "ms": 26478}
+{"i": 26, "kind": "command", "label": "shoot_49", "choice": "shoot_49", "right": true, "reasoning_chars": 0, "tokens": 17, "ms": 155054, "fallback": true}
+{"i": 28, "kind": "command", "label": "open_door", "choice": "open_door", "right": true, "reasoning_chars": 2381, "tokens": 856, "ms": 32566}
+{"i": 29, "kind": "command", "label": "shoot_65", "choice": "collect_8", "right": false, "reasoning_chars": 1616, "tokens": 549, "ms": 21365}
+{"i": 30, "kind": "command", "label": "shoot_11", "choice": "collect_32", "right": false, "reasoning_chars": 0, "tokens": 17, "ms": 154891, "fallback": true}
+{"i": 31, "kind": "command", "label": "exit", "choice": "exit", "right": true, "reasoning_chars": 1381, "tokens": 435, "ms": 17186}
+{"i": 32, "kind": "command", "label": "exit", "choice": "collect_66", "right": false, "reasoning_chars": 0, "tokens": 20, "ms": 155806, "fallback": true}
+{"i": 35, "kind": "command", "label": "open_door", "choice": "open_door", "right": true, "reasoning_chars": 2033, "tokens": 699, "ms": 26193}
+{"i": 36, "kind": "command", "label": "collect_105", "choice": "collect_105", "right": true, "reasoning_chars": 2765, "tokens": 988, "ms": 37243}
+{"i": 37, "kind": "command", "label": "exit", "choice": "exit", "right": true, "reasoning_chars": 4029, "tokens": 1327, "ms": 50015}
+{"i": 42, "kind": "command", "label": "collect_87", "choice": "collect_87", "right": true, "reasoning_chars": 0, "tokens": 17, "ms": 154780, "fallback": true}
+{"i": 43, "kind": "command", "label": "exit", "choice": "collect_47", "right": false, "reasoning_chars": 3656, "tokens": 1150, "ms": 44091}
+{"i": 46, "kind": "command", "label": "open_door", "choice": "open_door", "right": true, "reasoning_chars": 2381, "tokens": 857, "ms": 32546}
+{"i": 47, "kind": "command", "label": "exit", "choice": "exit", "right": true, "reasoning_chars": 6843, "tokens": 2118, "ms": 81060}
+{"i": 49, "kind": "command", "label": "exit", "choice": "collect_89", "right": false, "reasoning_chars": 0, "tokens": 17, "ms": 154930, "fallback": true}
+{"i": 50, "kind": "command", "label": "exit", "choice": "collect_26", "right": false, "reasoning_chars": 1702, "tokens": 560, "ms": 21576}
+{"i": 51, "kind": "command", "label": "collect_95", "choice": "collect_121", "right": false, "reasoning_chars": 0, "tokens": 18, "ms": 155021, "fallback": true}
+{"i": 52, "kind": "command", "label": "exit", "choice": "collect_121", "right": false, "reasoning_chars": 0, "tokens": 18, "ms": 155538, "fallback": true}
+{"i": 53, "kind": "command", "label": "exit", "choice": "exit", "right": true, "reasoning_chars": 809, "tokens": 233, "ms": 8939}
+{"i": 54, "kind": "command", "label": "shoot_20", "choice": "shoot_20", "right": true, "reasoning_chars": 0, "tokens": 22, "ms": 155824, "fallback": true}
+{"i": 55, "kind": "command", "label": "collect_17", "choice": "collect_17", "right": true, "reasoning_chars": 4242, "tokens": 1371, "ms": 52514}
+{"i": 57, "kind": "command", "label": "shoot_11", "choice": "collect_16", "right": false, "reasoning_chars": 0, "tokens": 17, "ms": 155510, "fallback": true}
+{"i": 58, "kind": "command", "label": "exit", "choice": "collect_44", "right": false, "reasoning_chars": 11382, "tokens": 3507, "ms": 134180}
+{"i": 59, "kind": "command", "label": "exit", "choice": "collect_191", "right": false, "reasoning_chars": 7580, "tokens": 2503, "ms": 96073}
+{"i": 60, "kind": "command", "label": "exit", "choice": "exit", "right": true, "reasoning_chars": 7818, "tokens": 2285, "ms": 87387}
+{"i": 61, "kind": "command", "label": "exit", "choice": "exit", "right": true, "reasoning_chars": 2175, "tokens": 585, "ms": 22496}
+{"i": 64, "kind": "command", "label": "collect_8", "choice": "collect_8", "right": true, "reasoning_chars": 1656, "tokens": 532, "ms": 20607}
+{"i": 65, "kind": "command", "label": "shoot_15", "choice": "collect_28", "right": false, "reasoning_chars": 0, "tokens": 22, "ms": 154084, "fallback": true}
+{"i": 66, "kind": "command", "label": "open_door", "choice": "open_door", "right": true, "reasoning_chars": 2832, "tokens": 985, "ms": 38517}
+{"i": 69, "kind": "command", "label": "shoot_67", "choice": "collect_8", "right": false, "reasoning_chars": 1604, "tokens": 548, "ms": 21729}
+{"i": 70, "kind": "command", "label": "collect_34", "choice": "collect_8", "right": false, "reasoning_chars": 0, "tokens": 16, "ms": 153306, "fallback": true}
+{"i": 72, "kind": "command", "label": "collect_27", "choice": "collect_35", "right": false, "reasoning_chars": 0, "tokens": 17, "ms": 153559, "fallback": true}
+{"i": 73, "kind": "command", "label": "collect_1", "choice": "collect_43", "right": false, "reasoning_chars": 8638, "tokens": 3048, "ms": 114382}
+{"i": 74, "kind": "command", "label": "exit", "choice": "exit", "right": true, "reasoning_chars": 769, "tokens": 220, "ms": 8580}
+{"i": 77, "kind": "command", "label": "open_door", "choice": "open_door", "right": true, "reasoning_chars": 2006, "tokens": 692, "ms": 25397}
+{"i": 78, "kind": "command", "label": "exit", "choice": "exit", "right": true, "reasoning_chars": 1426, "tokens": 448, "ms": 16439}
+{"i": 79, "kind": "command", "label": "collect_1", "choice": "collect_43", "right": false, "reasoning_chars": 0, "tokens": 17, "ms": 153110, "fallback": true}
+{"i": 80, "kind": "command", "label": "exit", "choice": "exit", "right": true, "reasoning_chars": 1816, "tokens": 553, "ms": 20011}
+{"i": 82, "kind": "command", "label": "open_door", "choice": "open_door", "right": true, "reasoning_chars": 1683, "tokens": 545, "ms": 19947}
+{"i": 83, "kind": "command", "label": "open_door", "choice": "open_door", "right": true, "reasoning_chars": 1504, "tokens": 491, "ms": 18363}
+{"i": 85, "kind": "command", "label": "exit", "choice": "exit", "right": true, "reasoning_chars": 6038, "tokens": 1848, "ms": 69058}
+{"i": 86, "kind": "command", "label": "shoot_11", "choice": "collect_28", "right": false, "reasoning_chars": 0, "tokens": 22, "ms": 155577, "fallback": true}
+{"i": 88, "kind": "command", "label": "open_door", "choice": "open_door", "right": true, "reasoning_chars": 2057, "tokens": 716, "ms": 26376}
+{"i": 89, "kind": "command", "label": "shoot_11", "choice": "collect_8", "right": false, "reasoning_chars": 0, "tokens": 21, "ms": 156537, "fallback": true}
+{"i": 90, "kind": "command", "label": "collect_60", "choice": "collect_61", "right": false, "reasoning_chars": 6835, "tokens": 2204, "ms": 84915}
+{"i": 91, "kind": "command", "label": "open_door", "choice": "open_door", "right": true, "reasoning_chars": 1849, "tokens": 685, "ms": 26054}
+{"i": 92, "kind": "command", "label": "open_door", "choice": "open_door", "right": true, "reasoning_chars": 2161, "tokens": 751, "ms": 28944}
+{"i": 93, "kind": "command", "label": "collect_95", "choice": "collect_121", "right": false, "reasoning_chars": 0, "tokens": 18, "ms": 155618, "fallback": true}
+{"i": 94, "kind": "command", "label": "exit", "choice": "collect_141", "right": false, "reasoning_chars": 0, "tokens": 21, "ms": 156890, "fallback": true}
+{"i": 95, "kind": "command", "label": "open_door", "choice": "open_door", "right": true, "reasoning_chars": 1494, "tokens": 504, "ms": 19097}
+{"i": 96, "kind": "command", "label": "open_door", "choice": "open_door", "right": true, "reasoning_chars": 1575, "tokens": 516, "ms": 19833}
+{"i": 98, "kind": "command", "label": "shoot_20", "choice": "shoot_20", "right": true, "reasoning_chars": 5499, "tokens": 1832, "ms": 70600}
+{"i": 99, "kind": "command", "label": "exit", "choice": "exit", "right": true, "reasoning_chars": 1533, "tokens": 415, "ms": 15617}
+{"i": 100, "kind": "command", "label": "open_door", "choice": "open_door", "right": true, "reasoning_chars": 1525, "tokens": 500, "ms": 18906}
+{"i": 102, "kind": "command", "label": "collect_88", "choice": "collect_88", "right": true, "reasoning_chars": 0, "tokens": 22, "ms": 156209, "fallback": true}
+{"i": 103, "kind": "command", "label": "collect_34", "choice": "collect_34", "right": true, "reasoning_chars": 1927, "tokens": 659, "ms": 25305}
+{"i": 104, "kind": "command", "label": "open_door", "choice": "open_door", "right": true, "reasoning_chars": 2384, "tokens": 810, "ms": 30781}
+{"i": 105, "kind": "command", "label": "shoot_20", "choice": "collect_52", "right": false, "reasoning_chars": 2363, "tokens": 823, "ms": 31301}
+{"i": 107, "kind": "command", "label": "exit", "choice": "exit", "right": true, "reasoning_chars": 2795, "tokens": 800, "ms": 30724}
+{"i": 110, "kind": "command", "label": "shoot_57", "choice": "collect_8", "right": false, "reasoning_chars": 2540, "tokens": 806, "ms": 30530}
+{"i": 113, "kind": "command", "label": "exit", "choice": "collect_126", "right": false, "reasoning_chars": 4340, "tokens": 1524, "ms": 57939}
+{"i": 114, "kind": "command", "label": "open_door", "choice": "open_door", "right": true, "reasoning_chars": 3299, "tokens": 1119, "ms": 41964}
+{"i": 116, "kind": "command", "label": "collect_74", "choice": "collect_74", "right": true, "reasoning_chars": 2409, "tokens": 779, "ms": 29065}
+{"i": 117, "kind": "command", "label": "open_door", "choice": "open_door", "right": true, "reasoning_chars": 1617, "tokens": 520, "ms": 19316}
+{"i": 119, "kind": "command", "label": "shoot_14", "choice": "shoot_14", "right": true, "reasoning_chars": 2926, "tokens": 1043, "ms": 40409}
+{"i": 120, "kind": "command", "label": "open_door", "choice": "open_door", "right": true, "reasoning_chars": 2515, "tokens": 879, "ms": 34433}
+{"i": 121, "kind": "command", "label": "open_door", "choice": "open_door", "right": true, "reasoning_chars": 1980, "tokens": 647, "ms": 24450}
+{"i": 122, "kind": "command", "label": "collect_92", "choice": "collect_92", "right": true, "reasoning_chars": 0, "tokens": 17, "ms": 153489, "fallback": true}
+{"i": 123, "kind": "command", "label": "collect_64", "choice": "collect_78", "right": false, "reasoning_chars": 3969, "tokens": 1352, "ms": 52099}
+{"i": 124, "kind": "command", "label": "open_door", "choice": "open_door", "right": true, "reasoning_chars": 1728, "tokens": 595, "ms": 22922}
+{"i": 125, "kind": "command", "label": "exit", "choice": "collect_84", "right": false, "reasoning_chars": 5675, "tokens": 1682, "ms": 63558}
+{"i": 126, "kind": "command", "label": "collect_27", "choice": "collect_27", "right": true, "reasoning_chars": 0, "tokens": 20, "ms": 153511, "fallback": true}
+{"i": 127, "kind": "command", "label": "shoot_14", "choice": "shoot_14", "right": true, "reasoning_chars": 2048, "tokens": 754, "ms": 28099}
+{"i": 128, "kind": "command", "label": "open_door", "choice": "collect_101", "right": false, "reasoning_chars": 0, "tokens": 18, "ms": 152835, "fallback": true}
+{"i": 130, "kind": "command", "label": "exit", "choice": "exit", "right": true, "reasoning_chars": 1661, "tokens": 523, "ms": 19913}
+{"i": 131, "kind": "command", "label": "open_door", "choice": "open_door", "right": true, "reasoning_chars": 1994, "tokens": 698, "ms": 26335}
+{"i": 133, "kind": "command", "label": "collect_54", "choice": "collect_64", "right": false, "reasoning_chars": 0, "tokens": 17, "ms": 153781, "fallback": true}
+{"i": 134, "kind": "command", "label": "collect_77", "choice": "collect_77", "right": true, "reasoning_chars": 0, "tokens": 17, "ms": 153717, "fallback": true}
+{"i": 135, "kind": "command", "label": "collect_85", "choice": "collect_85", "right": true, "reasoning_chars": 1969, "tokens": 649, "ms": 23988}
+{"i": 136, "kind": "command", "label": "shoot_175", "choice": "collect_190", "right": false, "reasoning_chars": 0, "tokens": 18, "ms": 154846, "fallback": true}
+{"i": 137, "kind": "command", "label": "exit", "choice": "collect_25", "right": false, "reasoning_chars": 0, "tokens": 17, "ms": 154773, "fallback": true}
+{"i": 138, "kind": "command", "label": "shoot_7", "choice": "collect_15", "right": false, "reasoning_chars": 0, "tokens": 17, "ms": 155202, "fallback": true}
+{"i": 139, "kind": "command", "label": "shoot_11", "choice": "collect_15", "right": false, "reasoning_chars": 5158, "tokens": 1778, "ms": 68500}
+{"i": 141, "kind": "command", "label": "collect_26", "choice": "collect_41", "right": false, "reasoning_chars": 0, "tokens": 17, "ms": 155995, "fallback": true}
+{"i": 142, "kind": "command", "label": "open_door", "choice": "open_door", "right": true, "reasoning_chars": 1524, "tokens": 516, "ms": 19488}
+{"i": 144, "kind": "command", "label": "exit", "choice": "collect_6", "right": false, "reasoning_chars": 0, "tokens": 16, "ms": 156772, "fallback": true}
+{"i": 145, "kind": "command", "label": "open_door", "choice": "open_door", "right": true, "reasoning_chars": 1532, "tokens": 487, "ms": 19137}
+{"i": 146, "kind": "command", "label": "collect_34", "choice": "collect_25", "right": false, "reasoning_chars": 0, "tokens": 20, "ms": 157396, "fallback": true}
+{"i": 147, "kind": "command", "label": "open_door", "choice": "open_door", "right": true, "reasoning_chars": 1272, "tokens": 419, "ms": 16949}
+{"i": 148, "kind": "command", "label": "shoot_7", "choice": "shoot_7", "right": true, "reasoning_chars": 2414, "tokens": 836, "ms": 31893}
+{"i": 149, "kind": "command", "label": "shoot_7", "choice": "collect_21", "right": false, "reasoning_chars": 5078, "tokens": 1627, "ms": 61478}
+{"i": 151, "kind": "command", "label": "collect_17", "choice": "collect_17", "right": true, "reasoning_chars": 1679, "tokens": 602, "ms": 22423}
+{"i": 152, "kind": "command", "label": "exit", "choice": "exit", "right": true, "reasoning_chars": 1520, "tokens": 413, "ms": 15134}
+{"i": 153, "kind": "command", "label": "shoot_79", "choice": "collect_92", "right": false, "reasoning_chars": 0, "tokens": 17, "ms": 157620, "fallback": true}
+{"i": 154, "kind": "command", "label": "open_door", "choice": "open_door", "right": true, "reasoning_chars": 1541, "tokens": 509, "ms": 18897}
+{"i": 156, "kind": "command", "label": "exit", "choice": "open_door", "right": false, "reasoning_chars": 1511, "tokens": 502, "ms": 18915}
+{"i": 157, "kind": "command", "label": "collect_29", "choice": "collect_29", "right": true, "reasoning_chars": 1716, "tokens": 555, "ms": 20904}
+{"i": 158, "kind": "command", "label": "collect_22", "choice": "collect_22", "right": true, "reasoning_chars": 1779, "tokens": 622, "ms": 24325}
+{"i": 165, "kind": "command", "label": "shoot_132", "choice": "shoot_132", "right": true, "reasoning_chars": 4605, "tokens": 1633, "ms": 63604}
+{"i": 167, "kind": "command", "label": "shoot_52", "choice": "collect_59", "right": false, "reasoning_chars": 0, "tokens": 22, "ms": 160647, "fallback": true}
+{"i": 169, "kind": "command", "label": "shoot_11", "choice": "collect_39", "right": false, "reasoning_chars": 0, "tokens": 22, "ms": 161022, "fallback": true}
+{"i": 171, "kind": "command", "label": "collect_48", "choice": "collect_48", "right": true, "reasoning_chars": 0, "tokens": 17, "ms": 160608, "fallback": true}
+{"i": 176, "kind": "command", "label": "exit", "choice": "collect_77", "right": false, "reasoning_chars": 2419, "tokens": 822, "ms": 32549}
+{"i": 177, "kind": "command", "label": "collect_1", "choice": "collect_43", "right": false, "reasoning_chars": 0, "tokens": 17, "ms": 159797, "fallback": true}
+{"i": 178, "kind": "command", "label": "open_door", "choice": "open_door", "right": true, "reasoning_chars": 2436, "tokens": 867, "ms": 34231}
+{"i": 185, "kind": "command", "label": "open_door", "choice": "open_door", "right": true, "reasoning_chars": 1396, "tokens": 511, "ms": 20063}
+{"i": 186, "kind": "command", "label": "collect_8", "choice": "collect_8", "right": true, "reasoning_chars": 1568, "tokens": 507, "ms": 20390}
+{"i": 187, "kind": "command", "label": "shoot_11", "choice": "collect_21", "right": false, "reasoning_chars": 3863, "tokens": 1341, "ms": 53242}
+{"i": 189, "kind": "command", "label": "collect_8", "choice": "collect_8", "right": true, "reasoning_chars": 2190, "tokens": 720, "ms": 28460}
+{"i": 190, "kind": "command", "label": "collect_1", "choice": "collect_1", "right": true, "reasoning_chars": 0, "tokens": 16, "ms": 159906, "fallback": true}
+{"i": 191, "kind": "command", "label": "exit", "choice": "collect_25", "right": false, "reasoning_chars": 1423, "tokens": 477, "ms": 18872}
+{"i": 193, "kind": "command", "label": "collect_8", "choice": "collect_8", "right": true, "reasoning_chars": 1733, "tokens": 556, "ms": 22417}
+{"i": 194, "kind": "command", "label": "exit", "choice": "collect_114", "right": false, "reasoning_chars": 8437, "tokens": 3071, "ms": 121022}
+{"i": 195, "kind": "command", "label": "open_door", "choice": "open_door", "right": true, "reasoning_chars": 1645, "tokens": 541, "ms": 22191}
+{"i": 197, "kind": "command", "label": "shoot_57", "choice": "collect_61", "right": false, "reasoning_chars": 0, "tokens": 22, "ms": 162246, "fallback": true}
+{"i": 198, "kind": "command", "label": "exit", "choice": "exit", "right": true, "reasoning_chars": 880, "tokens": 255, "ms": 10024}
+{"i": 203, "kind": "command", "label": "collect_21", "choice": "collect_21", "right": true, "reasoning_chars": 5399, "tokens": 1876, "ms": 73745}
+{"i": 204, "kind": "command", "label": "shoot_10", "choice": "collect_30", "right": false, "reasoning_chars": 9159, "tokens": 3293, "ms": 130028}
+{"i": 205, "kind": "command", "label": "collect_65", "choice": "collect_89", "right": false, "reasoning_chars": 5029, "tokens": 1654, "ms": 64061}
+{"i": 206, "kind": "command", "label": "open_door", "choice": "open_door", "right": true, "reasoning_chars": 1410, "tokens": 477, "ms": 18025}
+{"i": 207, "kind": "command", "label": "shoot_11", "choice": "collect_16", "right": false, "reasoning_chars": 3253, "tokens": 1141, "ms": 44790}
+{"i": 208, "kind": "command", "label": "shoot_11", "choice": "collect_24", "right": false, "reasoning_chars": 0, "tokens": 22, "ms": 160660, "fallback": true}
+{"i": 209, "kind": "command", "label": "collect_33", "choice": "collect_33", "right": true, "reasoning_chars": 1937, "tokens": 698, "ms": 28284}
+{"i": 211, "kind": "command", "label": "collect_8", "choice": "collect_8", "right": true, "reasoning_chars": 3104, "tokens": 963, "ms": 38380}
+{"i": 212, "kind": "command", "label": "shoot_140", "choice": "collect_138", "right": false, "reasoning_chars": 2011, "tokens": 745, "ms": 29620}
+{"i": 216, "kind": "command", "label": "exit", "choice": "collect_30", "right": false, "reasoning_chars": 2257, "tokens": 787, "ms": 31595}
+{"i": 218, "kind": "command", "label": "open_door", "choice": "open_door", "right": true, "reasoning_chars": 1561, "tokens": 515, "ms": 20610}
+{"i": 219, "kind": "command", "label": "collect_8", "choice": "collect_8", "right": true, "reasoning_chars": 1443, "tokens": 466, "ms": 18218}
+{"i": 224, "kind": "command", "label": "open_door", "choice": "open_door", "right": true, "reasoning_chars": 1662, "tokens": 549, "ms": 21962}
+{"i": 225, "kind": "command", "label": "open_door", "choice": "open_door", "right": true, "reasoning_chars": 1547, "tokens": 511, "ms": 20562}
+{"i": 226, "kind": "command", "label": "collect_80", "choice": "collect_80", "right": true, "reasoning_chars": 6446, "tokens": 2137, "ms": 83941}
+{"i": 227, "kind": "command", "label": "open_door", "choice": "open_door", "right": true, "reasoning_chars": 1591, "tokens": 500, "ms": 20264}
+{"i": 229, "kind": "command", "label": "open_door", "choice": "open_door", "right": true, "reasoning_chars": 1791, "tokens": 622, "ms": 24959}
+{"i": 230, "kind": "command", "label": "exit", "choice": "exit", "right": true, "reasoning_chars": 1973, "tokens": 530, "ms": 21594}
+{"i": 231, "kind": "command", "label": "exit", "choice": "collect_29", "right": false, "reasoning_chars": 3868, "tokens": 1317, "ms": 51468}
+{"i": 232, "kind": "command", "label": "collect_2", "choice": "collect_43", "right": false, "reasoning_chars": 9830, "tokens": 3282, "ms": 127873}
+{"i": 233, "kind": "command", "label": "exit", "choice": "collect_8", "right": false, "reasoning_chars": 2664, "tokens": 885, "ms": 34293}
+{"i": 235, "kind": "command", "label": "shoot_98", "choice": "shoot_98", "right": true, "reasoning_chars": 1980, "tokens": 692, "ms": 26459}
+{"i": 236, "kind": "command", "label": "collect_25", "choice": "collect_25", "right": true, "reasoning_chars": 0, "tokens": 20, "ms": 158610, "fallback": true}
+{"i": 237, "kind": "command", "label": "collect_33", "choice": "collect_33", "right": true, "reasoning_chars": 0, "tokens": 17, "ms": 157913, "fallback": true}
+{"i": 239, "kind": "command", "label": "open_door", "choice": "open_door", "right": true, "reasoning_chars": 2955, "tokens": 1011, "ms": 40202}
+{"i": 241, "kind": "command", "label": "shoot_7", "choice": "collect_19", "right": false, "reasoning_chars": 0, "tokens": 17, "ms": 158977, "fallback": true}
+{"i": 244, "kind": "command", "label": "collect_8", "choice": "collect_8", "right": true, "reasoning_chars": 0, "tokens": 16, "ms": 159357, "fallback": true}
+{"i": 246, "kind": "command", "label": "exit", "choice": "exit", "right": true, "reasoning_chars": 1300, "tokens": 405, "ms": 16204}
+{"i": 247, "kind": "command", "label": "open_door", "choice": "open_door", "right": true, "reasoning_chars": 2284, "tokens": 782, "ms": 30328}
+{"i": 250, "kind": "command", "label": "open_door", "choice": "open_door", "right": true, "reasoning_chars": 1628, "tokens": 602, "ms": 22738}
+{"i": 253, "kind": "command", "label": "exit", "choice": "collect_129", "right": false, "reasoning_chars": 1541, "tokens": 529, "ms": 20222}
+{"i": 254, "kind": "command", "label": "open_door", "choice": "open_door", "right": true, "reasoning_chars": 1620, "tokens": 522, "ms": 20523}
+{"i": 256, "kind": "command", "label": "open_door", "choice": "open_door", "right": true, "reasoning_chars": 1408, "tokens": 469, "ms": 18615}
+{"i": 258, "kind": "command", "label": "shoot_7", "choice": "collect_20", "right": false, "reasoning_chars": 8800, "tokens": 3068, "ms": 120848}
+{"i": 259, "kind": "command", "label": "exit", "choice": "exit", "right": true, "reasoning_chars": 6963, "tokens": 2074, "ms": 81995}
+{"i": 260, "kind": "command", "label": "open_door", "choice": "open_door", "right": true, "reasoning_chars": 2178, "tokens": 771, "ms": 29934}
+{"i": 261, "kind": "command", "label": "collect_83", "choice": "collect_95", "right": false, "reasoning_chars": 0, "tokens": 17, "ms": 159087, "fallback": true}
+{"i": 262, "kind": "command", "label": "shoot_7", "choice": "shoot_7", "right": true, "reasoning_chars": 0, "tokens": 16, "ms": 159537, "fallback": true}
+{"i": 263, "kind": "command", "label": "exit", "choice": "exit", "right": true, "reasoning_chars": 1340, "tokens": 347, "ms": 13945}
+{"i": 264, "kind": "command", "label": "collect_8", "choice": "collect_8", "right": true, "reasoning_chars": 0, "tokens": 16, "ms": 159482, "fallback": true}
+{"i": 265, "kind": "command", "label": "collect_16", "choice": "collect_16", "right": true, "reasoning_chars": 2295, "tokens": 717, "ms": 28618}
+{"i": 267, "kind": "command", "label": "exit", "choice": "open_door", "right": false, "reasoning_chars": 1524, "tokens": 491, "ms": 19937}
+{"i": 268, "kind": "command", "label": "collect_102", "choice": "collect_102", "right": true, "reasoning_chars": 3679, "tokens": 1203, "ms": 46746}
+{"i": 271, "kind": "command", "label": "exit", "choice": "exit", "right": true, "reasoning_chars": 12254, "tokens": 3813, "ms": 148411}
+{"i": 273, "kind": "command", "label": "shoot_7", "choice": "collect_17", "right": false, "reasoning_chars": 0, "tokens": 22, "ms": 158481, "fallback": true}
+{"i": 275, "kind": "command", "label": "shoot_7", "choice": "collect_8", "right": false, "reasoning_chars": 0, "tokens": 21, "ms": 158165, "fallback": true}
+{"i": 277, "kind": "command", "label": "shoot_40", "choice": "collect_14", "right": false, "reasoning_chars": 0, "tokens": 17, "ms": 157795, "fallback": true}
+{"i": 279, "kind": "command", "label": "open_door", "choice": "open_door", "right": true, "reasoning_chars": 1655, "tokens": 530, "ms": 20611}
+{"i": 281, "kind": "command", "label": "shoot_6", "choice": "collect_14", "right": false, "reasoning_chars": 0, "tokens": 22, "ms": 157755, "fallback": true}
+{"i": 282, "kind": "command", "label": "exit", "choice": "exit", "right": true, "reasoning_chars": 12301, "tokens": 3662, "ms": 141579}
+{"i": 285, "kind": "command", "label": "shoot_11", "choice": "collect_24", "right": false, "reasoning_chars": 0, "tokens": 22, "ms": 156546, "fallback": true}
+{"i": 288, "kind": "command", "label": "open_door", "choice": "open_door", "right": true, "reasoning_chars": 1252, "tokens": 407, "ms": 15555}
+{"i": 289, "kind": "command", "label": "shoot_3", "choice": "shoot_3", "right": true, "reasoning_chars": 0, "tokens": 21, "ms": 156805, "fallback": true}
+{"i": 290, "kind": "command", "label": "collect_8", "choice": "collect_8", "right": true, "reasoning_chars": 1682, "tokens": 529, "ms": 20656}
+{"i": 291, "kind": "command", "label": "open_door", "choice": "open_door", "right": true, "reasoning_chars": 2386, "tokens": 803, "ms": 30571}
+{"i": 293, "kind": "command", "label": "exit", "choice": "exit", "right": true, "reasoning_chars": 2923, "tokens": 769, "ms": 29423}
+{"i": 294, "kind": "command", "label": "exit", "choice": "collect_124", "right": false, "reasoning_chars": 7651, "tokens": 2484, "ms": 94514}
+{"i": 296, "kind": "command", "label": "exit", "choice": "exit", "right": true, "reasoning_chars": 12246, "tokens": 3613, "ms": 138606}
+{"i": 299, "kind": "command", "label": "collect_21", "choice": "collect_21", "right": true, "reasoning_chars": 0, "tokens": 22, "ms": 155749, "fallback": true}
+{"i": 300, "kind": "command", "label": "exit", "choice": "exit", "right": true, "reasoning_chars": 7788, "tokens": 2373, "ms": 90414}
+{"i": 301, "kind": "command", "label": "open_door", "choice": "open_door", "right": true, "reasoning_chars": 1921, "tokens": 637, "ms": 24301}
+{"i": 302, "kind": "command", "label": "open_door", "choice": "open_door", "right": true, "reasoning_chars": 1661, "tokens": 549, "ms": 20459}
+{"i": 306, "kind": "command", "label": "exit", "choice": "collect_40", "right": false, "reasoning_chars": 3527, "tokens": 1136, "ms": 43416}
+{"i": 307, "kind": "command", "label": "exit", "choice": "exit", "right": true, "reasoning_chars": 3993, "tokens": 1234, "ms": 47623}
+{"i": 308, "kind": "command", "label": "collect_31", "choice": "collect_31", "right": true, "reasoning_chars": 2399, "tokens": 752, "ms": 29092}
+{"i": 309, "kind": "command", "label": "shoot_52", "choice": "collect_85", "right": false, "reasoning_chars": 0, "tokens": 22, "ms": 155035, "fallback": true}
+{"i": 310, "kind": "command", "label": "shoot_67", "choice": "collect_8", "right": false, "reasoning_chars": 1872, "tokens": 624, "ms": 24611}
+{"i": 311, "kind": "command", "label": "open_door", "choice": "open_door", "right": true, "reasoning_chars": 1685, "tokens": 595, "ms": 23367}
+{"i": 312, "kind": "command", "label": "open_door", "choice": "open_door", "right": true, "reasoning_chars": 1587, "tokens": 524, "ms": 20022}
+{"i": 313, "kind": "command", "label": "shoot_11", "choice": "shoot_7", "right": false, "reasoning_chars": 0, "tokens": 16, "ms": 153572, "fallback": true}
+{"i": 314, "kind": "command", "label": "open_door", "choice": "open_door", "right": true, "reasoning_chars": 1650, "tokens": 582, "ms": 22360}
+{"i": 317, "kind": "command", "label": "collect_33", "choice": "collect_25", "right": false, "reasoning_chars": 0, "tokens": 20, "ms": 154299, "fallback": true}
+{"i": 318, "kind": "command", "label": "collect_22", "choice": "collect_33", "right": false, "reasoning_chars": 0, "tokens": 20, "ms": 154175, "fallback": true}
+{"i": 319, "kind": "command", "label": "collect_75", "choice": "collect_75", "right": true, "reasoning_chars": 3269, "tokens": 1114, "ms": 41948}
+{"i": 323, "kind": "command", "label": "shoot_14", "choice": "shoot_14", "right": true, "reasoning_chars": 8731, "tokens": 3029, "ms": 113900}
+{"i": 324, "kind": "command", "label": "collect_77", "choice": "collect_91", "right": false, "reasoning_chars": 0, "tokens": 17, "ms": 153203, "fallback": true}
+{"i": 325, "kind": "command", "label": "open_door", "choice": "open_door", "right": true, "reasoning_chars": 1696, "tokens": 597, "ms": 22254}
+{"i": 326, "kind": "command", "label": "exit", "choice": "collect_66", "right": false, "reasoning_chars": 0, "tokens": 20, "ms": 154322, "fallback": true}
+{"i": 327, "kind": "command", "label": "open_door", "choice": "open_door", "right": true, "reasoning_chars": 3584, "tokens": 1214, "ms": 45630}
+{"i": 328, "kind": "command", "label": "exit", "choice": "exit", "right": true, "reasoning_chars": 2472, "tokens": 725, "ms": 28176}
+{"i": 329, "kind": "command", "label": "shoot_56", "choice": "collect_89", "right": false, "reasoning_chars": 9589, "tokens": 3150, "ms": 119517}
+{"i": 330, "kind": "command", "label": "shoot_134", "choice": "collect_148", "right": false, "reasoning_chars": 0, "tokens": 23, "ms": 154979, "fallback": true}
+{"i": 331, "kind": "command", "label": "open_door", "choice": "open_door", "right": true, "reasoning_chars": 2404, "tokens": 820, "ms": 31659}
+{"i": 332, "kind": "command", "label": "collect_61", "choice": "collect_61", "right": true, "reasoning_chars": 6707, "tokens": 2144, "ms": 80904}
+{"i": 334, "kind": "command", "label": "exit", "choice": "collect_60", "right": false, "reasoning_chars": 1989, "tokens": 629, "ms": 24234}
+{"i": 335, "kind": "command", "label": "shoot_14", "choice": "collect_26", "right": false, "reasoning_chars": 0, "tokens": 17, "ms": 153350, "fallback": true}
+{"i": 338, "kind": "command", "label": "exit", "choice": "collect_24", "right": false, "reasoning_chars": 0, "tokens": 20, "ms": 153864, "fallback": true}
+{"i": 339, "kind": "command", "label": "shoot_20", "choice": "shoot_20", "right": true, "reasoning_chars": 0, "tokens": 20, "ms": 153847, "fallback": true}
+{"i": 340, "kind": "command", "label": "exit", "choice": "collect_135", "right": false, "reasoning_chars": 0, "tokens": 18, "ms": 153761, "fallback": true}
+{"i": 341, "kind": "command", "label": "open_door", "choice": "open_door", "right": true, "reasoning_chars": 1425, "tokens": 480, "ms": 17717}
+{"i": 343, "kind": "command", "label": "open_door", "choice": "open_door", "right": true, "reasoning_chars": 1501, "tokens": 493, "ms": 18853}
+{"i": 345, "kind": "command", "label": "shoot_11", "choice": "collect_43", "right": false, "reasoning_chars": 0, "tokens": 22, "ms": 155713, "fallback": true}
+{"i": 347, "kind": "command", "label": "open_door", "choice": "open_door", "right": true, "reasoning_chars": 1904, "tokens": 681, "ms": 25414}
+{"i": 348, "kind": "command", "label": "exit", "choice": "exit", "right": true, "reasoning_chars": 2171, "tokens": 587, "ms": 22154}
+{"i": 349, "kind": "command", "label": "collect_16", "choice": "collect_16", "right": true, "reasoning_chars": 3444, "tokens": 1238, "ms": 47466}
+{"i": 351, "kind": "command", "label": "open_door", "choice": "open_door", "right": true, "reasoning_chars": 1677, "tokens": 538, "ms": 20660}
+{"i": 353, "kind": "command", "label": "shoot_20", "choice": "collect_16", "right": false, "reasoning_chars": 4772, "tokens": 1619, "ms": 62279}
+{"i": 354, "kind": "command", "label": "collect_32", "choice": "collect_32", "right": true, "reasoning_chars": 10542, "tokens": 3561, "ms": 135667}
+{"i": 356, "kind": "command", "label": "collect_72", "choice": "collect_72", "right": true, "reasoning_chars": 6505, "tokens": 2143, "ms": 82030}
+{"i": 357, "kind": "command", "label": "exit", "choice": "collect_9", "right": false, "reasoning_chars": 2329, "tokens": 824, "ms": 31895}
+{"i": 360, "kind": "command", "label": "open_door", "choice": "open_door", "right": true, "reasoning_chars": 1529, "tokens": 517, "ms": 19656}
+{"i": 362, "kind": "command", "label": "exit", "choice": "exit", "right": true, "reasoning_chars": 3777, "tokens": 992, "ms": 38164}
+{"i": 366, "kind": "command", "label": "open_door", "choice": "open_door", "right": true, "reasoning_chars": 1424, "tokens": 515, "ms": 19763}
+{"i": 367, "kind": "command", "label": "open_door", "choice": "open_door", "right": true, "reasoning_chars": 1923, "tokens": 632, "ms": 24290}
+{"i": 368, "kind": "command", "label": "shoot_69", "choice": "shoot_69", "right": true, "reasoning_chars": 1757, "tokens": 573, "ms": 22533}
+{"i": 369, "kind": "command", "label": "open_door", "choice": "open_door", "right": true, "reasoning_chars": 0, "tokens": 16, "ms": 153072, "fallback": true}
+{"i": 370, "kind": "command", "label": "shoot_3", "choice": "collect_15", "right": false, "reasoning_chars": 4231, "tokens": 1492, "ms": 56658}
+{"i": 371, "kind": "command", "label": "shoot_10", "choice": "collect_13", "right": false, "reasoning_chars": 3436, "tokens": 1175, "ms": 44313}
+{"i": 372, "kind": "command", "label": "shoot_29", "choice": "collect_28", "right": false, "reasoning_chars": 0, "tokens": 22, "ms": 153561, "fallback": true}
+{"i": 373, "kind": "command", "label": "shoot_7", "choice": "shoot_7", "right": true, "reasoning_chars": 0, "tokens": 21, "ms": 153157, "fallback": true}
+{"i": 376, "kind": "command", "label": "shoot_15", "choice": "collect_8", "right": false, "reasoning_chars": 0, "tokens": 21, "ms": 153596, "fallback": true}
+{"i": 377, "kind": "command", "label": "shoot_11", "choice": "collect_42", "right": false, "reasoning_chars": 0, "tokens": 22, "ms": 154923, "fallback": true}
+{"i": 378, "kind": "command", "label": "open_door", "choice": "open_door", "right": true, "reasoning_chars": 0, "tokens": 16, "ms": 154819, "fallback": true}
+{"i": 380, "kind": "command", "label": "collect_8", "choice": "collect_8", "right": true, "reasoning_chars": 1692, "tokens": 545, "ms": 20210}
+{"i": 382, "kind": "command", "label": "exit", "choice": "exit", "right": true, "reasoning_chars": 2441, "tokens": 640, "ms": 23380}
+{"i": 383, "kind": "command", "label": "open_door", "choice": "open_door", "right": true, "reasoning_chars": 1575, "tokens": 518, "ms": 19290}
+{"i": 385, "kind": "command", "label": "collect_72", "choice": "collect_72", "right": true, "reasoning_chars": 0, "tokens": 17, "ms": 156252, "fallback": true}
+{"i": 386, "kind": "command", "label": "collect_1", "choice": "collect_36", "right": false, "reasoning_chars": 0, "tokens": 17, "ms": 156309, "fallback": true}
+{"i": 387, "kind": "command", "label": "collect_80", "choice": "collect_80", "right": true, "reasoning_chars": 0, "tokens": 17, "ms": 156524, "fallback": true}
+{"i": 388, "kind": "command", "label": "open_door", "choice": "open_door", "right": true, "reasoning_chars": 1830, "tokens": 634, "ms": 25113}
+{"i": 389, "kind": "command", "label": "exit", "choice": "exit", "right": true, "reasoning_chars": 2059, "tokens": 602, "ms": 23244}
+{"i": 390, "kind": "command", "label": "collect_8", "choice": "collect_8", "right": true, "reasoning_chars": 1589, "tokens": 522, "ms": 20781}
+{"i": 391, "kind": "command", "label": "collect_67", "choice": "collect_127", "right": false, "reasoning_chars": 0, "tokens": 18, "ms": 155386, "fallback": true}
+{"i": 393, "kind": "command", "label": "collect_21", "choice": "collect_21", "right": true, "reasoning_chars": 0, "tokens": 17, "ms": 155331, "fallback": true}
+{"i": 394, "kind": "command", "label": "shoot_11", "choice": "shoot_7", "right": false, "reasoning_chars": 0, "tokens": 16, "ms": 155114, "fallback": true}
+{"i": 395, "kind": "command", "label": "open_door", "choice": "open_door", "right": true, "reasoning_chars": 2249, "tokens": 788, "ms": 29656}
+{"i": 396, "kind": "command", "label": "collect_69", "choice": "collect_103", "right": false, "reasoning_chars": 6080, "tokens": 2181, "ms": 83133}
+{"i": 397, "kind": "command", "label": "exit", "choice": "collect_36", "right": false, "reasoning_chars": 1144, "tokens": 399, "ms": 15485}
+{"i": 398, "kind": "command", "label": "exit", "choice": "exit", "right": true, "reasoning_chars": 1959, "tokens": 532, "ms": 20327}
+{"i": 401, "kind": "command", "label": "open_door", "choice": "open_door", "right": true, "reasoning_chars": 1655, "tokens": 530, "ms": 20208}
+{"i": 402, "kind": "command", "label": "exit", "choice": "collect_109", "right": false, "reasoning_chars": 5321, "tokens": 1801, "ms": 68352}
+{"i": 403, "kind": "command", "label": "open_door", "choice": "open_door", "right": true, "reasoning_chars": 1852, "tokens": 647, "ms": 24586}
+{"i": 404, "kind": "command", "label": "open_door", "choice": "open_door", "right": true, "reasoning_chars": 1460, "tokens": 495, "ms": 18518}
+{"i": 405, "kind": "command", "label": "collect_27", "choice": "collect_27", "right": true, "reasoning_chars": 0, "tokens": 20, "ms": 154729, "fallback": true}
+{"i": 407, "kind": "command", "label": "exit", "choice": "exit", "right": true, "reasoning_chars": 6663, "tokens": 1982, "ms": 75463}
+{"i": 408, "kind": "command", "label": "collect_8", "choice": "collect_8", "right": true, "reasoning_chars": 1704, "tokens": 561, "ms": 21139}
+{"i": 409, "kind": "command", "label": "collect_17", "choice": "collect_32", "right": false, "reasoning_chars": 0, "tokens": 20, "ms": 154378, "fallback": true}
+{"i": 411, "kind": "command", "label": "collect_23", "choice": "collect_23", "right": true, "reasoning_chars": 1533, "tokens": 523, "ms": 20124}
+{"i": 412, "kind": "command", "label": "exit", "choice": "collect_9", "right": false, "reasoning_chars": 2208, "tokens": 728, "ms": 28306}
+{"i": 414, "kind": "command", "label": "shoot_12", "choice": "shoot_12", "right": true, "reasoning_chars": 0, "tokens": 17, "ms": 155463, "fallback": true}
+{"i": 415, "kind": "command", "label": "collect_7", "choice": "collect_7", "right": true, "reasoning_chars": 1789, "tokens": 580, "ms": 21660}
+{"i": 416, "kind": "command", "label": "open_door", "choice": "open_door", "right": true, "reasoning_chars": 2007, "tokens": 698, "ms": 26106}
+{"i": 417, "kind": "command", "label": "collect_33", "choice": "collect_42", "right": false, "reasoning_chars": 0, "tokens": 17, "ms": 153177, "fallback": true}
+{"i": 421, "kind": "command", "label": "shoot_11", "choice": "shoot_11", "right": true, "reasoning_chars": 10503, "tokens": 3292, "ms": 123387}
+{"i": 422, "kind": "command", "label": "collect_25", "choice": "collect_25", "right": true, "reasoning_chars": 0, "tokens": 20, "ms": 154266, "fallback": true}
+{"i": 424, "kind": "command", "label": "exit", "choice": "collect_20", "right": false, "reasoning_chars": 0, "tokens": 20, "ms": 154064, "fallback": true}
+{"i": 427, "kind": "command", "label": "exit", "choice": "collect_162", "right": false, "reasoning_chars": 7375, "tokens": 2473, "ms": 92749}
+{"i": 428, "kind": "command", "label": "collect_7", "choice": "collect_7", "right": true, "reasoning_chars": 1741, "tokens": 576, "ms": 22237}
+{"i": 429, "kind": "command", "label": "exit", "choice": "collect_9", "right": false, "reasoning_chars": 2236, "tokens": 743, "ms": 29025}
+{"i": 430, "kind": "command", "label": "exit", "choice": "collect_115", "right": false, "reasoning_chars": 7864, "tokens": 2478, "ms": 93891}
+{"i": 432, "kind": "command", "label": "exit", "choice": "collect_38", "right": false, "reasoning_chars": 0, "tokens": 17, "ms": 153854, "fallback": true}
+{"i": 433, "kind": "command", "label": "shoot_7", "choice": "shoot_7", "right": true, "reasoning_chars": 0, "tokens": 16, "ms": 153780, "fallback": true}
+{"i": 435, "kind": "command", "label": "open_door", "choice": "open_door", "right": true, "reasoning_chars": 2257, "tokens": 746, "ms": 28620}
+{"i": 439, "kind": "command", "label": "exit", "choice": "collect_110", "right": false, "reasoning_chars": 4005, "tokens": 1339, "ms": 50424}
+{"i": 440, "kind": "command", "label": "shoot_11", "choice": "collect_41", "right": false, "reasoning_chars": 4739, "tokens": 1654, "ms": 61960}
+{"i": 441, "kind": "command", "label": "open_door", "choice": "open_door", "right": true, "reasoning_chars": 1701, "tokens": 606, "ms": 22450}
+{"i": 442, "kind": "command", "label": "open_door", "choice": "open_door", "right": true, "reasoning_chars": 2838, "tokens": 967, "ms": 35537}
+{"i": 445, "kind": "command", "label": "open_door", "choice": "open_door", "right": true, "reasoning_chars": 1580, "tokens": 518, "ms": 18844}
+{"i": 446, "kind": "command", "label": "exit", "choice": "collect_115", "right": false, "reasoning_chars": 0, "tokens": 18, "ms": 153531, "fallback": true}
+{"i": 448, "kind": "command", "label": "open_door", "choice": "open_door", "right": true, "reasoning_chars": 1373, "tokens": 465, "ms": 17594}
+{"i": 450, "kind": "command", "label": "open_door", "choice": "open_door", "right": true, "reasoning_chars": 1819, "tokens": 625, "ms": 23617}
+{"i": 451, "kind": "command", "label": "open_door", "choice": "open_door", "right": true, "reasoning_chars": 2356, "tokens": 839, "ms": 31491}
+{"i": 453, "kind": "command", "label": "collect_92", "choice": "collect_105", "right": false, "reasoning_chars": 0, "tokens": 18, "ms": 154073, "fallback": true}
+{"i": 454, "kind": "command", "label": "open_door", "choice": "open_door", "right": true, "reasoning_chars": 2563, "tokens": 900, "ms": 33649}
+{"i": 455, "kind": "command", "label": "shoot_14", "choice": "collect_15", "right": false, "reasoning_chars": 0, "tokens": 17, "ms": 153762, "fallback": true}
+{"i": 457, "kind": "command", "label": "collect_73", "choice": "collect_87", "right": false, "reasoning_chars": 2700, "tokens": 931, "ms": 34665}
+{"i": 458, "kind": "command", "label": "exit", "choice": "exit", "right": true, "reasoning_chars": 1454, "tokens": 453, "ms": 17596}
+{"i": 459, "kind": "command", "label": "open_door", "choice": "open_door", "right": true, "reasoning_chars": 1961, "tokens": 673, "ms": 25689}
+{"i": 460, "kind": "command", "label": "exit", "choice": "exit", "right": true, "reasoning_chars": 3037, "tokens": 796, "ms": 30524}
+{"i": 464, "kind": "command", "label": "shoot_7", "choice": "shoot_7", "right": true, "reasoning_chars": 0, "tokens": 19, "ms": 154232, "fallback": true}
+{"i": 465, "kind": "command", "label": "collect_69", "choice": "collect_69", "right": true, "reasoning_chars": 2840, "tokens": 1008, "ms": 38178}
+{"i": 466, "kind": "command", "label": "open_door", "choice": "open_door", "right": true, "reasoning_chars": 1436, "tokens": 467, "ms": 17778}
+{"i": 467, "kind": "command", "label": "open_door", "choice": "open_door", "right": true, "reasoning_chars": 1693, "tokens": 613, "ms": 22892}
+{"i": 469, "kind": "command", "label": "shoot_11", "choice": "collect_8", "right": false, "reasoning_chars": 0, "tokens": 21, "ms": 154349, "fallback": true}
+{"i": 470, "kind": "command", "label": "shoot_7", "choice": "shoot_7", "right": true, "reasoning_chars": 0, "tokens": 21, "ms": 154928, "fallback": true}
+{"i": 471, "kind": "command", "label": "open_door", "choice": "open_door", "right": true, "reasoning_chars": 1583, "tokens": 520, "ms": 19739}
+{"i": 473, "kind": "command", "label": "collect_8", "choice": "collect_8", "right": true, "reasoning_chars": 0, "tokens": 16, "ms": 154775, "fallback": true}
+{"i": 474, "kind": "command", "label": "open_door", "choice": "open_door", "right": true, "reasoning_chars": 1548, "tokens": 511, "ms": 19661}
+{"i": 478, "kind": "command", "label": "shoot_20", "choice": "collect_43", "right": false, "reasoning_chars": 0, "tokens": 22, "ms": 155485, "fallback": true}
+{"i": 479, "kind": "command", "label": "open_door", "choice": "open_door", "right": true, "reasoning_chars": 2319, "tokens": 790, "ms": 30137}
+{"i": 480, "kind": "command", "label": "open_door", "choice": "open_door", "right": true, "reasoning_chars": 1675, "tokens": 537, "ms": 20634}
+{"i": 481, "kind": "command", "label": "exit", "choice": "collect_123", "right": false, "reasoning_chars": 0, "tokens": 18, "ms": 155052, "fallback": true}
+{"i": 482, "kind": "command", "label": "exit", "choice": "collect_9", "right": false, "reasoning_chars": 4820, "tokens": 1598, "ms": 60854}
+{"i": 484, "kind": "command", "label": "collect_30", "choice": "collect_24", "right": false, "reasoning_chars": 0, "tokens": 22, "ms": 155533, "fallback": true}
+{"i": 488, "kind": "command", "label": "exit", "choice": "exit", "right": true, "reasoning_chars": 4098, "tokens": 1102, "ms": 42321}
+{"i": 490, "kind": "command", "label": "collect_14", "choice": "collect_14", "right": true, "reasoning_chars": 1287, "tokens": 451, "ms": 18047}
+{"i": 492, "kind": "command", "label": "collect_77", "choice": "collect_89", "right": false, "reasoning_chars": 0, "tokens": 17, "ms": 154936, "fallback": true}
+{"i": 493, "kind": "command", "label": "exit", "choice": "collect_104", "right": false, "reasoning_chars": 0, "tokens": 18, "ms": 155324, "fallback": true}
+{"i": 494, "kind": "command", "label": "shoot_7", "choice": "collect_33", "right": false, "reasoning_chars": 0, "tokens": 22, "ms": 156743, "fallback": true}
+{"i": 496, "kind": "command", "label": "shoot_11", "choice": "shoot_7", "right": false, "reasoning_chars": 0, "tokens": 21, "ms": 156591, "fallback": true}
+{"i": 498, "kind": "command", "label": "shoot_11", "choice": "shoot_7", "right": false, "reasoning_chars": 0, "tokens": 16, "ms": 156089, "fallback": true}
+{"i": 499, "kind": "command", "label": "shoot_3", "choice": "collect_21", "right": false, "reasoning_chars": 2028, "tokens": 771, "ms": 29762}
+{"i": 500, "kind": "command", "label": "shoot_7", "choice": "collect_1", "right": false, "reasoning_chars": 0, "tokens": 21, "ms": 160229, "fallback": true}
+{"i": 503, "kind": "command", "label": "exit", "choice": "exit", "right": true, "reasoning_chars": 3249, "tokens": 891, "ms": 33407}
+{"i": 504, "kind": "command", "label": "shoot_32", "choice": "shoot_32", "right": true, "reasoning_chars": 0, "tokens": 17, "ms": 161032, "fallback": true}
+{"i": 505, "kind": "command", "label": "collect_84", "choice": "collect_84", "right": true, "reasoning_chars": 6461, "tokens": 2047, "ms": 80824}
+{"i": 507, "kind": "command", "label": "collect_15", "choice": "collect_42", "right": false, "reasoning_chars": 0, "tokens": 17, "ms": 163918, "fallback": true}
+{"i": 508, "kind": "command", "label": "collect_104", "choice": "collect_117", "right": false, "reasoning_chars": 0, "tokens": 18, "ms": 164193, "fallback": true}
+{"i": 510, "kind": "command", "label": "open_door", "choice": "open_door", "right": true, "reasoning_chars": 2556, "tokens": 842, "ms": 33893}
+{"i": 511, "kind": "command", "label": "collect_8", "choice": "collect_8", "right": true, "reasoning_chars": 2363, "tokens": 820, "ms": 32973}
+{"i": 512, "kind": "command", "label": "shoot_11", "choice": "collect_15", "right": false, "reasoning_chars": 2756, "tokens": 1047, "ms": 41756}
+{"i": 513, "kind": "command", "label": "exit", "choice": "exit", "right": true, "reasoning_chars": 9845, "tokens": 3135, "ms": 126758}
+{"i": 514, "kind": "command", "label": "exit", "choice": "collect_35", "right": false, "reasoning_chars": 4514, "tokens": 1501, "ms": 60926}
+{"i": 515, "kind": "command", "label": "exit", "choice": "collect_129", "right": false, "reasoning_chars": 3006, "tokens": 1086, "ms": 43687}
+{"i": 517, "kind": "command", "label": "exit", "choice": "collect_144", "right": false, "reasoning_chars": 2477, "tokens": 816, "ms": 33370}
+{"i": 519, "kind": "command", "label": "shoot_3", "choice": "shoot_3", "right": true, "reasoning_chars": 0, "tokens": 19, "ms": 164175, "fallback": true}
+{"i": 521, "kind": "command", "label": "open_door", "choice": "open_door", "right": true, "reasoning_chars": 1759, "tokens": 607, "ms": 24707}
+{"i": 522, "kind": "command", "label": "open_door", "choice": "open_door", "right": true, "reasoning_chars": 2056, "tokens": 712, "ms": 28550}
+{"i": 524, "kind": "command", "label": "collect_19", "choice": "collect_36", "right": false, "reasoning_chars": 0, "tokens": 17, "ms": 163349, "fallback": true}
+{"i": 525, "kind": "command", "label": "collect_89", "choice": "collect_89", "right": true, "reasoning_chars": 6968, "tokens": 2214, "ms": 88660}
+{"i": 526, "kind": "command", "label": "shoot_66", "choice": "collect_8", "right": false, "reasoning_chars": 0, "tokens": 21, "ms": 163553, "fallback": true}
+{"i": 528, "kind": "command", "label": "exit", "choice": "collect_66", "right": false, "reasoning_chars": 2512, "tokens": 868, "ms": 34916}
+{"i": 529, "kind": "command", "label": "open_door", "choice": "open_door", "right": true, "reasoning_chars": 1529, "tokens": 517, "ms": 21022}
+{"i": 530, "kind": "command", "label": "open_door", "choice": "open_door", "right": true, "reasoning_chars": 1548, "tokens": 510, "ms": 20543}
+{"i": 532, "kind": "command", "label": "open_door", "choice": "open_door", "right": true, "reasoning_chars": 2063, "tokens": 697, "ms": 27693}
+{"i": 533, "kind": "command", "label": "shoot_3", "choice": "shoot_3", "right": true, "reasoning_chars": 3609, "tokens": 1309, "ms": 51830}
+{"i": 534, "kind": "command", "label": "open_door", "choice": "open_door", "right": true, "reasoning_chars": 3025, "tokens": 1046, "ms": 41765}
+{"i": 535, "kind": "command", "label": "shoot_7", "choice": "collect_17", "right": false, "reasoning_chars": 0, "tokens": 22, "ms": 146084, "fallback": true}
+{"i": 539, "kind": "command", "label": "exit", "choice": "exit", "right": true, "reasoning_chars": 2180, "tokens": 573, "ms": 19537}
+{"i": 540, "kind": "command", "label": "shoot_3", "choice": "collect_29", "right": false, "reasoning_chars": 2374, "tokens": 869, "ms": 29796}
+{"i": 541, "kind": "command", "label": "open_door", "choice": "open_door", "right": true, "reasoning_chars": 1766, "tokens": 579, "ms": 19996}
+{"i": 542, "kind": "command", "label": "shoot_152", "choice": "collect_166", "right": false, "reasoning_chars": 0, "tokens": 23, "ms": 146442, "fallback": true}
+{"i": 543, "kind": "command", "label": "open_door", "choice": "open_door", "right": true, "reasoning_chars": 1386, "tokens": 461, "ms": 15592}
+{"i": 544, "kind": "command", "label": "shoot_10", "choice": "collect_30", "right": false, "reasoning_chars": 0, "tokens": 22, "ms": 145976, "fallback": true}
+{"i": 545, "kind": "command", "label": "exit", "choice": "collect_8", "right": false, "reasoning_chars": 4100, "tokens": 1392, "ms": 47849}
+{"i": 546, "kind": "command", "label": "exit", "choice": "collect_19", "right": false, "reasoning_chars": 0, "tokens": 20, "ms": 148061, "fallback": true}
+{"i": 547, "kind": "command", "label": "shoot_11", "choice": "shoot_7", "right": false, "reasoning_chars": 0, "tokens": 16, "ms": 147790, "fallback": true}
+{"i": 548, "kind": "command", "label": "exit", "choice": "collect_2", "right": false, "reasoning_chars": 0, "tokens": 19, "ms": 148343, "fallback": true}
+{"i": 550, "kind": "command", "label": "open_door", "choice": "open_door", "right": true, "reasoning_chars": 1761, "tokens": 653, "ms": 22962}
+{"i": 551, "kind": "command", "label": "open_door", "choice": "open_door", "right": true, "reasoning_chars": 2223, "tokens": 785, "ms": 28325}
+{"i": 552, "kind": "command", "label": "exit", "choice": "exit", "right": true, "reasoning_chars": 1797, "tokens": 471, "ms": 16769}
+{"i": 554, "kind": "command", "label": "exit", "choice": "collect_1", "right": false, "reasoning_chars": 2760, "tokens": 869, "ms": 31672}
+{"i": 555, "kind": "command", "label": "shoot_14", "choice": "collect_17", "right": false, "reasoning_chars": 0, "tokens": 17, "ms": 151915, "fallback": true}
+{"i": 556, "kind": "command", "label": "shoot_64", "choice": "shoot_64", "right": true, "reasoning_chars": 0, "tokens": 17, "ms": 152662, "fallback": true}
+{"i": 557, "kind": "command", "label": "collect_8", "choice": "collect_8", "right": true, "reasoning_chars": 2071, "tokens": 658, "ms": 25789}
+{"i": 558, "kind": "command", "label": "open_door", "choice": "open_door", "right": true, "reasoning_chars": 1792, "tokens": 622, "ms": 24307}
+{"i": 559, "kind": "command", "label": "shoot_7", "choice": "collect_26", "right": false, "reasoning_chars": 3134, "tokens": 1148, "ms": 43533}
+{"i": 560, "kind": "command", "label": "exit", "choice": "open_door", "right": false, "reasoning_chars": 0, "tokens": 16, "ms": 152988, "fallback": true}
+{"i": 561, "kind": "command", "label": "exit", "choice": "exit", "right": true, "reasoning_chars": 1480, "tokens": 465, "ms": 17479}
+{"i": 562, "kind": "command", "label": "shoot_11", "choice": "collect_21", "right": false, "reasoning_chars": 11105, "tokens": 3573, "ms": 133910}
+{"i": 564, "kind": "command", "label": "exit", "choice": "exit", "right": true, "reasoning_chars": 3188, "tokens": 862, "ms": 31554}
+{"i": 565, "kind": "command", "label": "open_door", "choice": "open_door", "right": true, "reasoning_chars": 1473, "tokens": 489, "ms": 17820}
+{"i": 566, "kind": "command", "label": "exit", "choice": "open_door", "right": false, "reasoning_chars": 3332, "tokens": 1025, "ms": 38280}
+{"i": 567, "kind": "command", "label": "exit", "choice": "exit", "right": true, "reasoning_chars": 4015, "tokens": 1057, "ms": 39838}
+{"i": 570, "kind": "command", "label": "exit", "choice": "exit", "right": true, "reasoning_chars": 1668, "tokens": 451, "ms": 16713}
+{"i": 571, "kind": "command", "label": "collect_108", "choice": "collect_105", "right": false, "reasoning_chars": 0, "tokens": 18, "ms": 153701, "fallback": true}
+{"i": 572, "kind": "command", "label": "collect_15", "choice": "collect_15", "right": true, "reasoning_chars": 3973, "tokens": 1266, "ms": 47766}
+{"i": 573, "kind": "command", "label": "shoot_7", "choice": "shoot_7", "right": true, "reasoning_chars": 0, "tokens": 19, "ms": 154205, "fallback": true}
+{"i": 574, "kind": "command", "label": "open_door", "choice": "open_door", "right": true, "reasoning_chars": 2002, "tokens": 704, "ms": 26992}
+{"i": 576, "kind": "command", "label": "shoot_138", "choice": "shoot_138", "right": true, "reasoning_chars": 3375, "tokens": 1127, "ms": 42522}
+{"i": 577, "kind": "command", "label": "open_door", "choice": "open_door", "right": true, "reasoning_chars": 1462, "tokens": 459, "ms": 17463}
+{"i": 578, "kind": "command", "label": "shoot_11", "choice": "collect_42", "right": false, "reasoning_chars": 0, "tokens": 17, "ms": 153913, "fallback": true}
+{"i": 579, "kind": "command", "label": "shoot_50", "choice": "shoot_50", "right": true, "reasoning_chars": 0, "tokens": 17, "ms": 153504, "fallback": true}
+{"i": 580, "kind": "command", "label": "shoot_7", "choice": "collect_16", "right": false, "reasoning_chars": 0, "tokens": 22, "ms": 154801, "fallback": true}
+{"i": 581, "kind": "command", "label": "shoot_118", "choice": "collect_95", "right": false, "reasoning_chars": 0, "tokens": 17, "ms": 154356, "fallback": true}
+{"i": 582, "kind": "command", "label": "shoot_14", "choice": "shoot_14", "right": true, "reasoning_chars": 3094, "tokens": 1058, "ms": 40086}
+{"i": 585, "kind": "command", "label": "exit", "choice": "collect_114", "right": false, "reasoning_chars": 0, "tokens": 21, "ms": 154955, "fallback": true}
+{"i": 587, "kind": "command", "label": "open_door", "choice": "open_door", "right": true, "reasoning_chars": 1598, "tokens": 518, "ms": 19927}
+{"i": 588, "kind": "command", "label": "collect_1", "choice": "collect_1", "right": true, "reasoning_chars": 0, "tokens": 16, "ms": 154732, "fallback": true}
+{"i": 590, "kind": "command", "label": "collect_74", "choice": "collect_74", "right": true, "reasoning_chars": 0, "tokens": 17, "ms": 155410, "fallback": true}
+{"i": 591, "kind": "command", "label": "open_door", "choice": "open_door", "right": true, "reasoning_chars": 2405, "tokens": 839, "ms": 32322}
+{"i": 592, "kind": "command", "label": "open_door", "choice": "open_door", "right": true, "reasoning_chars": 2627, "tokens": 905, "ms": 34860}
+{"i": 593, "kind": "command", "label": "collect_8", "choice": "collect_8", "right": true, "reasoning_chars": 1549, "tokens": 488, "ms": 19299}
+{"i": 594, "kind": "command", "label": "collect_77", "choice": "collect_102", "right": false, "reasoning_chars": 0, "tokens": 18, "ms": 154953, "fallback": true}
+{"i": 595, "kind": "command", "label": "open_door", "choice": "open_door", "right": true, "reasoning_chars": 1408, "tokens": 512, "ms": 19753}
+{"i": 599, "kind": "command", "label": "shoot_137", "choice": "shoot_137", "right": true, "reasoning_chars": 4490, "tokens": 1566, "ms": 59659}
+{"i": 601, "kind": "command", "label": "shoot_50", "choice": "shoot_50", "right": true, "reasoning_chars": 2482, "tokens": 898, "ms": 33543}
+{"i": 602, "kind": "command", "label": "exit", "choice": "collect_131", "right": false, "reasoning_chars": 8271, "tokens": 2807, "ms": 106997}
+{"i": 603, "kind": "command", "label": "exit", "choice": "open_door", "right": false, "reasoning_chars": 1570, "tokens": 511, "ms": 19443}
+{"i": 605, "kind": "command", "label": "collect_41", "choice": "collect_41", "right": true, "reasoning_chars": 1810, "tokens": 614, "ms": 23772}
+{"i": 606, "kind": "command", "label": "exit", "choice": "collect_44", "right": false, "reasoning_chars": 1622, "tokens": 508, "ms": 19272}
+{"i": 608, "kind": "command", "label": "shoot_64", "choice": "collect_98", "right": false, "reasoning_chars": 0, "tokens": 22, "ms": 154292, "fallback": true}
+{"i": 609, "kind": "command", "label": "open_door", "choice": "open_door", "right": true, "reasoning_chars": 2744, "tokens": 962, "ms": 36963}
+{"i": 611, "kind": "command", "label": "open_door", "choice": "open_door", "right": true, "reasoning_chars": 1413, "tokens": 514, "ms": 19465}
+{"i": 612, "kind": "command", "label": "collect_19", "choice": "collect_19", "right": true, "reasoning_chars": 1807, "tokens": 606, "ms": 23259}
+{"i": 614, "kind": "command", "label": "collect_20", "choice": "collect_20", "right": true, "reasoning_chars": 9250, "tokens": 3143, "ms": 118975}
+{"i": 617, "kind": "command", "label": "exit", "choice": "exit", "right": true, "reasoning_chars": 1660, "tokens": 450, "ms": 17298}
+{"i": 618, "kind": "command", "label": "open_door", "choice": "open_door", "right": true, "reasoning_chars": 1524, "tokens": 516, "ms": 19657}
+{"i": 621, "kind": "command", "label": "open_door", "choice": "open_door", "right": true, "reasoning_chars": 1990, "tokens": 717, "ms": 27023}
+{"i": 622, "kind": "command", "label": "shoot_3", "choice": "shoot_3", "right": true, "reasoning_chars": 1988, "tokens": 750, "ms": 28529}
+{"i": 623, "kind": "command", "label": "collect_27", "choice": "collect_27", "right": true, "reasoning_chars": 0, "tokens": 20, "ms": 153379, "fallback": true}
+{"i": 624, "kind": "command", "label": "shoot_119", "choice": "collect_81", "right": false, "reasoning_chars": 0, "tokens": 22, "ms": 153935, "fallback": true}
+{"i": 625, "kind": "command", "label": "shoot_118", "choice": "collect_97", "right": false, "reasoning_chars": 0, "tokens": 22, "ms": 154133, "fallback": true}
+{"i": 626, "kind": "command", "label": "shoot_94", "choice": "collect_96", "right": false, "reasoning_chars": 0, "tokens": 22, "ms": 154482, "fallback": true}
+{"i": 627, "kind": "command", "label": "exit", "choice": "collect_1", "right": false, "reasoning_chars": 4066, "tokens": 1231, "ms": 46002}
+{"i": 628, "kind": "command", "label": "open_door", "choice": "open_door", "right": true, "reasoning_chars": 2152, "tokens": 750, "ms": 27549}
+{"i": 630, "kind": "command", "label": "shoot_53", "choice": "collect_87", "right": false, "reasoning_chars": 0, "tokens": 22, "ms": 154442, "fallback": true}
+{"i": 631, "kind": "command", "label": "shoot_7", "choice": "collect_18", "right": false, "reasoning_chars": 0, "tokens": 22, "ms": 155150, "fallback": true}
+{"i": 632, "kind": "command", "label": "shoot_11", "choice": "collect_8", "right": false, "reasoning_chars": 0, "tokens": 21, "ms": 155047, "fallback": true}
+{"i": 633, "kind": "command", "label": "open_door", "choice": "open_door", "right": true, "reasoning_chars": 1690, "tokens": 579, "ms": 21589}
+{"i": 634, "kind": "command", "label": "exit", "choice": "exit", "right": true, "reasoning_chars": 9054, "tokens": 2688, "ms": 102617}
+{"i": 638, "kind": "command", "label": "exit", "choice": "collect_60", "right": false, "reasoning_chars": 0, "tokens": 17, "ms": 153653, "fallback": true}
+{"i": 639, "kind": "command", "label": "open_door", "choice": "open_door", "right": true, "reasoning_chars": 1572, "tokens": 501, "ms": 19264}
+{"i": 641, "kind": "command", "label": "shoot_117", "choice": "shoot_117", "right": true, "reasoning_chars": 0, "tokens": 18, "ms": 154199, "fallback": true}
+{"i": 642, "kind": "command", "label": "exit", "choice": "collect_59", "right": false, "reasoning_chars": 0, "tokens": 17, "ms": 154204, "fallback": true}
+{"i": 643, "kind": "command", "label": "exit", "choice": "collect_24", "right": false, "reasoning_chars": 1431, "tokens": 475, "ms": 17703}
+{"i": 644, "kind": "command", "label": "open_door", "choice": "open_door", "right": true, "reasoning_chars": 1543, "tokens": 519, "ms": 19612}
+{"i": 645, "kind": "command", "label": "open_door", "choice": "open_door", "right": true, "reasoning_chars": 1552, "tokens": 510, "ms": 19827}
+{"i": 646, "kind": "command", "label": "exit", "choice": "exit", "right": true, "reasoning_chars": 2250, "tokens": 702, "ms": 26935}
+{"i": 648, "kind": "command", "label": "shoot_7", "choice": "shoot_7", "right": true, "reasoning_chars": 0, "tokens": 21, "ms": 154779, "fallback": true}
+{"i": 650, "kind": "command", "label": "exit", "choice": "collect_9", "right": false, "reasoning_chars": 6847, "tokens": 2287, "ms": 86280}
+{"i": 652, "kind": "command", "label": "open_door", "choice": "open_door", "right": true, "reasoning_chars": 2374, "tokens": 781, "ms": 29117}
+{"i": 654, "kind": "command", "label": "collect_1", "choice": "collect_36", "right": false, "reasoning_chars": 0, "tokens": 17, "ms": 154310, "fallback": true}
+{"i": 656, "kind": "command", "label": "collect_17", "choice": "collect_17", "right": true, "reasoning_chars": 2094, "tokens": 708, "ms": 26354}
+{"i": 659, "kind": "command", "label": "shoot_3", "choice": "shoot_3", "right": true, "reasoning_chars": 0, "tokens": 21, "ms": 155557, "fallback": true}
+{"i": 660, "kind": "command", "label": "open_door", "choice": "open_door", "right": true, "reasoning_chars": 1580, "tokens": 513, "ms": 19333}
+{"i": 662, "kind": "command", "label": "shoot_144", "choice": "collect_122", "right": false, "reasoning_chars": 0, "tokens": 18, "ms": 155707, "fallback": true}
+{"i": 664, "kind": "command", "label": "collect_89", "choice": "collect_89", "right": true, "reasoning_chars": 1534, "tokens": 555, "ms": 21709}
+{"i": 665, "kind": "command", "label": "shoot_11", "choice": "collect_8", "right": false, "reasoning_chars": 0, "tokens": 21, "ms": 156050, "fallback": true}
+{"i": 666, "kind": "command", "label": "exit", "choice": "collect_9", "right": false, "reasoning_chars": 2645, "tokens": 884, "ms": 33454}
+{"i": 668, "kind": "command", "label": "open_door", "choice": "open_door", "right": true, "reasoning_chars": 2347, "tokens": 882, "ms": 33310}
+{"i": 670, "kind": "command", "label": "shoot_36", "choice": "shoot_36", "right": true, "reasoning_chars": 1677, "tokens": 564, "ms": 20841}
+{"i": 672, "kind": "command", "label": "shoot_11", "choice": "shoot_7", "right": false, "reasoning_chars": 0, "tokens": 21, "ms": 156378, "fallback": true}
+{"i": 673, "kind": "command", "label": "collect_18", "choice": "collect_18", "right": true, "reasoning_chars": 2152, "tokens": 718, "ms": 27912}
+{"i": 674, "kind": "command", "label": "open_door", "choice": "open_door", "right": true, "reasoning_chars": 1770, "tokens": 641, "ms": 24480}
+{"i": 675, "kind": "command", "label": "shoot_20", "choice": "shoot_20", "right": true, "reasoning_chars": 2126, "tokens": 735, "ms": 28452}
+{"i": 676, "kind": "command", "label": "open_door", "choice": "open_door", "right": true, "reasoning_chars": 2278, "tokens": 807, "ms": 31119}
+{"i": 677, "kind": "command", "label": "collect_17", "choice": "collect_17", "right": true, "reasoning_chars": 3798, "tokens": 1319, "ms": 50685}
+{"i": 678, "kind": "command", "label": "shoot_3", "choice": "shoot_3", "right": true, "reasoning_chars": 1755, "tokens": 616, "ms": 23967}
+{"i": 679, "kind": "command", "label": "exit", "choice": "collect_84", "right": false, "reasoning_chars": 2618, "tokens": 812, "ms": 31090}
+{"i": 680, "kind": "command", "label": "exit", "choice": "exit", "right": true, "reasoning_chars": 2255, "tokens": 689, "ms": 27026}
+{"i": 681, "kind": "command", "label": "exit", "choice": "exit", "right": true, "reasoning_chars": 1771, "tokens": 521, "ms": 20354}
+{"i": 682, "kind": "command", "label": "collect_87", "choice": "collect_112", "right": false, "reasoning_chars": 3293, "tokens": 1163, "ms": 44814}
+{"i": 683, "kind": "command", "label": "exit", "choice": "collect_152", "right": false, "reasoning_chars": 0, "tokens": 21, "ms": 153859, "fallback": true}
+{"i": 686, "kind": "command", "label": "shoot_11", "choice": "collect_32", "right": false, "reasoning_chars": 10665, "tokens": 3923, "ms": 147594}
+{"i": 687, "kind": "command", "label": "shoot_3", "choice": "shoot_3", "right": true, "reasoning_chars": 10310, "tokens": 3436, "ms": 128515}
+{"i": 688, "kind": "command", "label": "open_door", "choice": "open_door", "right": true, "reasoning_chars": 1529, "tokens": 499, "ms": 18777}
+{"i": 691, "kind": "command", "label": "shoot_11", "choice": "collect_38", "right": false, "reasoning_chars": 0, "tokens": 22, "ms": 153975, "fallback": true}
+{"i": 692, "kind": "command", "label": "collect_89", "choice": "collect_98", "right": false, "reasoning_chars": 0, "tokens": 17, "ms": 153312, "fallback": true}
+{"i": 693, "kind": "command", "label": "shoot_30", "choice": "shoot_30", "right": true, "reasoning_chars": 0, "tokens": 17, "ms": 153047, "fallback": true}
+{"i": 699, "kind": "command", "label": "open_door", "choice": "open_door", "right": true, "reasoning_chars": 1672, "tokens": 623, "ms": 23019}
+{"i": 700, "kind": "command", "label": "collect_8", "choice": "collect_8", "right": true, "reasoning_chars": 1777, "tokens": 565, "ms": 21408}
+{"i": 701, "kind": "command", "label": "collect_1", "choice": "collect_8", "right": false, "reasoning_chars": 0, "tokens": 16, "ms": 153553, "fallback": true}
+{"i": 703, "kind": "command", "label": "shoot_3", "choice": "shoot_3", "right": true, "reasoning_chars": 0, "tokens": 21, "ms": 154366, "fallback": true}
+{"i": 706, "kind": "command", "label": "shoot_117", "choice": "collect_131", "right": false, "reasoning_chars": 0, "tokens": 18, "ms": 154996, "fallback": true}
+{"i": 707, "kind": "command", "label": "collect_77", "choice": "collect_77", "right": true, "reasoning_chars": 0, "tokens": 17, "ms": 155084, "fallback": true}
+{"i": 708, "kind": "command", "label": "collect_83", "choice": "collect_91", "right": false, "reasoning_chars": 0, "tokens": 17, "ms": 155099, "fallback": true}
+{"i": 709, "kind": "command", "label": "shoot_7", "choice": "shoot_7", "right": true, "reasoning_chars": 0, "tokens": 21, "ms": 155669, "fallback": true}
+{"i": 710, "kind": "command", "label": "open_door", "choice": "open_door", "right": true, "reasoning_chars": 2653, "tokens": 947, "ms": 35914}
+{"i": 712, "kind": "command", "label": "open_door", "choice": "open_door", "right": true, "reasoning_chars": 1808, "tokens": 626, "ms": 23416}
+{"i": 713, "kind": "command", "label": "collect_61", "choice": "collect_61", "right": true, "reasoning_chars": 3623, "tokens": 1203, "ms": 45639}
+{"i": 715, "kind": "command", "label": "exit", "choice": "collect_57", "right": false, "reasoning_chars": 7039, "tokens": 2398, "ms": 91862}
+{"i": 716, "kind": "command", "label": "exit", "choice": "collect_8", "right": false, "reasoning_chars": 0, "tokens": 16, "ms": 154354, "fallback": true}
+{"i": 717, "kind": "command", "label": "collect_45", "choice": "collect_45", "right": true, "reasoning_chars": 2238, "tokens": 747, "ms": 28007}
+{"i": 719, "kind": "command", "label": "shoot_4", "choice": "shoot_4", "right": true, "reasoning_chars": 2326, "tokens": 861, "ms": 32946}
+{"i": 720, "kind": "command", "label": "shoot_72", "choice": "collect_11", "right": false, "reasoning_chars": 0, "tokens": 22, "ms": 154899, "fallback": true}
+{"i": 721, "kind": "command", "label": "open_door", "choice": "open_door", "right": true, "reasoning_chars": 1394, "tokens": 464, "ms": 17976}
+{"i": 722, "kind": "command", "label": "collect_71", "choice": "exit", "right": false, "reasoning_chars": 11944, "tokens": 3706, "ms": 140653}
+{"i": 724, "kind": "command", "label": "exit", "choice": "collect_9", "right": false, "reasoning_chars": 2028, "tokens": 682, "ms": 26023}
+{"i": 726, "kind": "command", "label": "shoot_14", "choice": "shoot_14", "right": true, "reasoning_chars": 0, "tokens": 17, "ms": 154277, "fallback": true}
+{"i": 729, "kind": "command", "label": "open_door", "choice": "open_door", "right": true, "reasoning_chars": 2096, "tokens": 744, "ms": 27973}
+{"i": 730, "kind": "command", "label": "open_door", "choice": "open_door", "right": true, "reasoning_chars": 1765, "tokens": 596, "ms": 22214}
+{"i": 732, "kind": "command", "label": "open_door", "choice": "open_door", "right": true, "reasoning_chars": 1495, "tokens": 501, "ms": 18958}
+{"i": 735, "kind": "command", "label": "open_door", "choice": "open_door", "right": true, "reasoning_chars": 1934, "tokens": 663, "ms": 25177}
+{"i": 736, "kind": "command", "label": "open_door", "choice": "open_door", "right": true, "reasoning_chars": 1225, "tokens": 406, "ms": 15579}
+{"i": 737, "kind": "command", "label": "collect_1", "choice": "collect_72", "right": false, "reasoning_chars": 2997, "tokens": 1025, "ms": 39131}
+{"i": 738, "kind": "command", "label": "shoot_11", "choice": "collect_36", "right": false, "reasoning_chars": 0, "tokens": 17, "ms": 154293, "fallback": true}
+{"i": 741, "kind": "command", "label": "open_door", "choice": "open_door", "right": true, "reasoning_chars": 1529, "tokens": 517, "ms": 19450}
+{"i": 743, "kind": "command", "label": "exit", "choice": "collect_19", "right": false, "reasoning_chars": 0, "tokens": 17, "ms": 154633, "fallback": true}
+{"i": 744, "kind": "command", "label": "shoot_7", "choice": "collect_21", "right": false, "reasoning_chars": 0, "tokens": 22, "ms": 154909, "fallback": true}
+{"i": 745, "kind": "command", "label": "exit", "choice": "exit", "right": true, "reasoning_chars": 2655, "tokens": 797, "ms": 29863}
+{"i": 746, "kind": "command", "label": "exit", "choice": "exit", "right": true, "reasoning_chars": 6384, "tokens": 2080, "ms": 78700}
+{"i": 747, "kind": "command", "label": "shoot_14", "choice": "shoot_14", "right": true, "reasoning_chars": 2785, "tokens": 955, "ms": 36593}
+{"i": 748, "kind": "command", "label": "shoot_11", "choice": "collect_38", "right": false, "reasoning_chars": 0, "tokens": 22, "ms": 154928, "fallback": true}
+{"i": 749, "kind": "command", "label": "shoot_7", "choice": "shoot_7", "right": true, "reasoning_chars": 0, "tokens": 16, "ms": 154626, "fallback": true}
+{"i": 750, "kind": "command", "label": "exit", "choice": "collect_66", "right": false, "reasoning_chars": 3382, "tokens": 1155, "ms": 43842}
+{"i": 752, "kind": "command", "label": "exit", "choice": "collect_94", "right": false, "reasoning_chars": 4449, "tokens": 1355, "ms": 51732}
+{"i": 753, "kind": "command", "label": "exit", "choice": "exit", "right": true, "reasoning_chars": 3316, "tokens": 863, "ms": 32690}
+{"i": 754, "kind": "command", "label": "collect_12", "choice": "collect_47", "right": false, "reasoning_chars": 0, "tokens": 22, "ms": 155378, "fallback": true}
+{"i": 755, "kind": "command", "label": "collect_36", "choice": "collect_36", "right": true, "reasoning_chars": 7087, "tokens": 2337, "ms": 89008}
+{"i": 758, "kind": "command", "label": "open_door", "choice": "open_door", "right": true, "reasoning_chars": 2152, "tokens": 765, "ms": 29218}
+{"i": 760, "kind": "command", "label": "exit", "choice": "collect_159", "right": false, "reasoning_chars": 2213, "tokens": 756, "ms": 28798}
+{"i": 762, "kind": "command", "label": "exit", "choice": "exit", "right": true, "reasoning_chars": 1421, "tokens": 454, "ms": 17386}
+{"i": 764, "kind": "command", "label": "open_door", "choice": "open_door", "right": true, "reasoning_chars": 1529, "tokens": 517, "ms": 19753}
+{"i": 765, "kind": "command", "label": "collect_8", "choice": "collect_8", "right": true, "reasoning_chars": 0, "tokens": 16, "ms": 153621, "fallback": true}
+{"i": 770, "kind": "command", "label": "open_door", "choice": "open_door", "right": true, "reasoning_chars": 1716, "tokens": 557, "ms": 21115}
+{"i": 771, "kind": "command", "label": "collect_69", "choice": "collect_79", "right": false, "reasoning_chars": 0, "tokens": 17, "ms": 154172, "fallback": true}
+{"i": 773, "kind": "command", "label": "exit", "choice": "collect_105", "right": false, "reasoning_chars": 4404, "tokens": 1532, "ms": 57760}
+{"i": 774, "kind": "command", "label": "exit", "choice": "exit", "right": true, "reasoning_chars": 3342, "tokens": 868, "ms": 32845}
+{"i": 776, "kind": "command", "label": "exit", "choice": "collect_9", "right": false, "reasoning_chars": 4753, "tokens": 1559, "ms": 59427}
+{"i": 778, "kind": "command", "label": "open_door", "choice": "open_door", "right": true, "reasoning_chars": 1872, "tokens": 651, "ms": 24692}
+{"i": 780, "kind": "command", "label": "open_door", "choice": "open_door", "right": true, "reasoning_chars": 1427, "tokens": 518, "ms": 19570}
+{"i": 781, "kind": "command", "label": "shoot_105", "choice": "shoot_105", "right": true, "reasoning_chars": 0, "tokens": 18, "ms": 154141, "fallback": true}
+{"i": 782, "kind": "command", "label": "shoot_3", "choice": "shoot_3", "right": true, "reasoning_chars": 8614, "tokens": 3036, "ms": 115167}
+{"i": 783, "kind": "command", "label": "open_door", "choice": "open_door", "right": true, "reasoning_chars": 1571, "tokens": 513, "ms": 19234}
+{"i": 784, "kind": "command", "label": "collect_11", "choice": "collect_11", "right": true, "reasoning_chars": 1493, "tokens": 481, "ms": 18341}
+{"i": 785, "kind": "command", "label": "collect_77", "choice": "collect_77", "right": true, "reasoning_chars": 8643, "tokens": 2817, "ms": 107135}
+{"i": 786, "kind": "command", "label": "collect_61", "choice": "collect_61", "right": true, "reasoning_chars": 1650, "tokens": 599, "ms": 22999}
+{"i": 789, "kind": "command", "label": "shoot_75", "choice": "shoot_75", "right": true, "reasoning_chars": 0, "tokens": 17, "ms": 154410, "fallback": true}
+{"i": 791, "kind": "command", "label": "shoot_7", "choice": "shoot_7", "right": true, "reasoning_chars": 0, "tokens": 21, "ms": 155323, "fallback": true}
+{"i": 793, "kind": "command", "label": "shoot_20", "choice": "collect_24", "right": false, "reasoning_chars": 0, "tokens": 22, "ms": 155025, "fallback": true}
+{"i": 795, "kind": "command", "label": "shoot_11", "choice": "collect_8", "right": false, "reasoning_chars": 0, "tokens": 21, "ms": 155223, "fallback": true}
+{"i": 796, "kind": "command", "label": "open_door", "choice": "open_door", "right": true, "reasoning_chars": 1874, "tokens": 645, "ms": 24204}
+{"i": 797, "kind": "command", "label": "collect_69", "choice": "collect_103", "right": false, "reasoning_chars": 4950, "tokens": 1656, "ms": 63094}
+{"i": 798, "kind": "command", "label": "exit", "choice": "collect_143", "right": false, "reasoning_chars": 3512, "tokens": 1152, "ms": 43947}
+{"i": 799, "kind": "command", "label": "collect_8", "choice": "collect_8", "right": true, "reasoning_chars": 1763, "tokens": 571, "ms": 21633}
+{"i": 800, "kind": "command", "label": "collect_68", "choice": "collect_68", "right": true, "reasoning_chars": 0, "tokens": 20, "ms": 154370, "fallback": true}
+{"i": 801, "kind": "command", "label": "collect_19", "choice": "collect_19", "right": true, "reasoning_chars": 2658, "tokens": 854, "ms": 33004}
+{"i": 803, "kind": "command", "label": "shoot_11", "choice": "collect_16", "right": false, "reasoning_chars": 2266, "tokens": 809, "ms": 31191}
+{"i": 804, "kind": "command", "label": "exit", "choice": "exit", "right": true, "reasoning_chars": 5225, "tokens": 1580, "ms": 61019}
+{"i": 805, "kind": "command", "label": "open_door", "choice": "open_door", "right": true, "reasoning_chars": 1842, "tokens": 685, "ms": 26542}
+{"i": 806, "kind": "command", "label": "open_door", "choice": "open_door", "right": true, "reasoning_chars": 1743, "tokens": 615, "ms": 23990}
+{"i": 807, "kind": "command", "label": "collect_33", "choice": "collect_33", "right": true, "reasoning_chars": 1764, "tokens": 598, "ms": 23419}
+{"i": 808, "kind": "command", "label": "shoot_3", "choice": "collect_15", "right": false, "reasoning_chars": 2837, "tokens": 1044, "ms": 40137}
+{"i": 810, "kind": "command", "label": "exit", "choice": "collect_39", "right": false, "reasoning_chars": 0, "tokens": 17, "ms": 153345, "fallback": true}
+{"i": 811, "kind": "command", "label": "shoot_14", "choice": "shoot_14", "right": true, "reasoning_chars": 2170, "tokens": 718, "ms": 27479}
+{"i": 813, "kind": "command", "label": "exit", "choice": "open_door", "right": false, "reasoning_chars": 3117, "tokens": 1115, "ms": 42075}
+{"i": 816, "kind": "command", "label": "shoot_36", "choice": "collect_54", "right": false, "reasoning_chars": 0, "tokens": 17, "ms": 153259, "fallback": true}
+{"i": 817, "kind": "command", "label": "shoot_20", "choice": "collect_24", "right": false, "reasoning_chars": 0, "tokens": 22, "ms": 153789, "fallback": true}
+{"i": 818, "kind": "command", "label": "shoot_11", "choice": "collect_42", "right": false, "reasoning_chars": 0, "tokens": 22, "ms": 153778, "fallback": true}
+{"i": 819, "kind": "command", "label": "collect_79", "choice": "collect_89", "right": false, "reasoning_chars": 0, "tokens": 17, "ms": 153513, "fallback": true}
+{"i": 821, "kind": "command", "label": "shoot_162", "choice": "shoot_162", "right": true, "reasoning_chars": 0, "tokens": 18, "ms": 154400, "fallback": true}
+{"i": 823, "kind": "command", "label": "open_door", "choice": "open_door", "right": true, "reasoning_chars": 5649, "tokens": 1872, "ms": 69680}
+{"i": 825, "kind": "command", "label": "exit", "choice": "exit", "right": true, "reasoning_chars": 3806, "tokens": 1250, "ms": 46811}
+{"i": 827, "kind": "command", "label": "open_door", "choice": "open_door", "right": true, "reasoning_chars": 1627, "tokens": 579, "ms": 22209}
+{"i": 830, "kind": "command", "label": "exit", "choice": "exit", "right": true, "reasoning_chars": 1959, "tokens": 532, "ms": 20902}
+{"i": 831, "kind": "command", "label": "collect_8", "choice": "collect_8", "right": true, "reasoning_chars": 0, "tokens": 16, "ms": 154386, "fallback": true}
+{"i": 832, "kind": "command", "label": "open_door", "choice": "open_door", "right": true, "reasoning_chars": 2349, "tokens": 797, "ms": 30955}
+{"i": 833, "kind": "command", "label": "collect_8", "choice": "collect_8", "right": true, "reasoning_chars": 0, "tokens": 16, "ms": 154025, "fallback": true}
+{"i": 834, "kind": "command", "label": "shoot_144", "choice": "collect_122", "right": false, "reasoning_chars": 0, "tokens": 18, "ms": 154454, "fallback": true}
+{"i": 835, "kind": "command", "label": "collect_69", "choice": "collect_84", "right": false, "reasoning_chars": 4189, "tokens": 1407, "ms": 52287}
+{"i": 836, "kind": "command", "label": "exit", "choice": "exit", "right": true, "reasoning_chars": 1655, "tokens": 503, "ms": 18627}
+{"i": 837, "kind": "command", "label": "collect_89", "choice": "collect_89", "right": true, "reasoning_chars": 1506, "tokens": 524, "ms": 19421}
+{"i": 838, "kind": "command", "label": "exit", "choice": "collect_24", "right": false, "reasoning_chars": 1655, "tokens": 535, "ms": 19940}
+{"i": 840, "kind": "command", "label": "exit", "choice": "exit", "right": true, "reasoning_chars": 3816, "tokens": 1069, "ms": 38496}
+{"i": 842, "kind": "command", "label": "shoot_20", "choice": "shoot_20", "right": true, "reasoning_chars": 0, "tokens": 17, "ms": 152915, "fallback": true}
+{"i": 845, "kind": "command", "label": "exit", "choice": "exit", "right": true, "reasoning_chars": 1509, "tokens": 474, "ms": 17090}
+{"i": 846, "kind": "command", "label": "open_door", "choice": "open_door", "right": true, "reasoning_chars": 2019, "tokens": 723, "ms": 26167}
+{"i": 847, "kind": "command", "label": "open_door", "choice": "open_door", "right": true, "reasoning_chars": 1889, "tokens": 649, "ms": 24182}
+{"i": 849, "kind": "command", "label": "collect_8", "choice": "collect_8", "right": true, "reasoning_chars": 1530, "tokens": 489, "ms": 18690}
+{"i": 850, "kind": "command", "label": "open_door", "choice": "open_door", "right": true, "reasoning_chars": 2293, "tokens": 767, "ms": 28667}
+{"i": 852, "kind": "command", "label": "shoot_3", "choice": "shoot_3", "right": true, "reasoning_chars": 0, "tokens": 21, "ms": 154617, "fallback": true}
+{"i": 854, "kind": "command", "label": "collect_15", "choice": "collect_15", "right": true, "reasoning_chars": 0, "tokens": 20, "ms": 154881, "fallback": true}
+{"i": 855, "kind": "command", "label": "shoot_11", "choice": "collect_43", "right": false, "reasoning_chars": 0, "tokens": 22, "ms": 155648, "fallback": true}
+{"i": 860, "kind": "command", "label": "collect_1", "choice": "collect_72", "right": false, "reasoning_chars": 1791, "tokens": 617, "ms": 23257}
+{"i": 861, "kind": "command", "label": "open_door", "choice": "open_door", "right": true, "reasoning_chars": 1642, "tokens": 577, "ms": 22161}
+{"i": 862, "kind": "command", "label": "exit", "choice": "exit", "right": true, "reasoning_chars": 1959, "tokens": 532, "ms": 20762}
+{"i": 863, "kind": "command", "label": "collect_33", "choice": "collect_27", "right": false, "reasoning_chars": 0, "tokens": 20, "ms": 154648, "fallback": true}
+{"i": 864, "kind": "command", "label": "open_door", "choice": "open_door", "right": true, "reasoning_chars": 1200, "tokens": 407, "ms": 15802}
+{"i": 865, "kind": "command", "label": "shoot_7", "choice": "shoot_7", "right": true, "reasoning_chars": 0, "tokens": 16, "ms": 154271, "fallback": true}
+{"i": 866, "kind": "command", "label": "collect_66", "choice": "collect_64", "right": false, "reasoning_chars": 2225, "tokens": 750, "ms": 28017}
+{"i": 867, "kind": "command", "label": "collect_8", "choice": "collect_8", "right": true, "reasoning_chars": 1813, "tokens": 583, "ms": 22007}
+{"i": 869, "kind": "command", "label": "collect_48", "choice": "collect_48", "right": true, "reasoning_chars": 0, "tokens": 20, "ms": 155351, "fallback": true}
+{"i": 870, "kind": "command", "label": "shoot_7", "choice": "shoot_7", "right": true, "reasoning_chars": 0, "tokens": 21, "ms": 155512, "fallback": true}
+{"i": 871, "kind": "command", "label": "exit", "choice": "collect_25", "right": false, "reasoning_chars": 1509, "tokens": 498, "ms": 18889}
+{"i": 873, "kind": "command", "label": "exit", "choice": "collect_108", "right": false, "reasoning_chars": 0, "tokens": 21, "ms": 155364, "fallback": true}
+{"i": 874, "kind": "command", "label": "collect_15", "choice": "collect_15", "right": true, "reasoning_chars": 8505, "tokens": 2953, "ms": 112627}
+{"i": 875, "kind": "command", "label": "exit", "choice": "collect_111", "right": false, "reasoning_chars": 0, "tokens": 18, "ms": 155125, "fallback": true}
+{"i": 876, "kind": "command", "label": "shoot_51", "choice": "collect_31", "right": false, "reasoning_chars": 3309, "tokens": 1245, "ms": 46510}
+{"i": 877, "kind": "command", "label": "exit", "choice": "collect_138", "right": false, "reasoning_chars": 7219, "tokens": 2412, "ms": 92656}
+{"i": 880, "kind": "command", "label": "collect_136", "choice": "collect_136", "right": true, "reasoning_chars": 1883, "tokens": 615, "ms": 23636}
+{"i": 881, "kind": "command", "label": "collect_33", "choice": "collect_33", "right": true, "reasoning_chars": 1570, "tokens": 575, "ms": 22051}
+{"i": 882, "kind": "command", "label": "exit", "choice": "exit", "right": true, "reasoning_chars": 2264, "tokens": 676, "ms": 26399}
+{"i": 884, "kind": "command", "label": "collect_34", "choice": "collect_8", "right": false, "reasoning_chars": 0, "tokens": 16, "ms": 152669, "fallback": true}
+{"i": 886, "kind": "command", "label": "collect_8", "choice": "collect_8", "right": true, "reasoning_chars": 0, "tokens": 23, "ms": 153549, "fallback": true}
+{"i": 887, "kind": "command", "label": "open_door", "choice": "open_door", "right": true, "reasoning_chars": 1572, "tokens": 522, "ms": 19870}
+{"i": 888, "kind": "command", "label": "collect_92", "choice": "collect_117", "right": false, "reasoning_chars": 0, "tokens": 18, "ms": 152570, "fallback": true}
+{"i": 889, "kind": "command", "label": "shoot_3", "choice": "collect_15", "right": false, "reasoning_chars": 2197, "tokens": 774, "ms": 29258}
+{"i": 890, "kind": "command", "label": "collect_17", "choice": "collect_17", "right": true, "reasoning_chars": 1830, "tokens": 673, "ms": 25998}
+{"i": 891, "kind": "command", "label": "exit", "choice": "collect_38", "right": false, "reasoning_chars": 7417, "tokens": 2492, "ms": 92641}
+{"i": 893, "kind": "command", "label": "collect_31", "choice": "collect_31", "right": true, "reasoning_chars": 0, "tokens": 20, "ms": 146575, "fallback": true}
+{"i": 894, "kind": "command", "label": "shoot_34", "choice": "collect_32", "right": false, "reasoning_chars": 0, "tokens": 22, "ms": 145314, "fallback": true}
+{"i": 895, "kind": "command", "label": "exit", "choice": "collect_29", "right": false, "reasoning_chars": 0, "tokens": 17, "ms": 143543, "fallback": true}
+{"i": 896, "kind": "command", "label": "collect_35", "choice": "collect_41", "right": false, "reasoning_chars": 0, "tokens": 17, "ms": 139622, "fallback": true}
+{"i": 898, "kind": "command", "label": "exit", "choice": "collect_66", "right": false, "reasoning_chars": 0, "tokens": 20, "ms": 91263, "fallback": true}
+{"i": 899, "kind": "command", "label": "exit", "choice": "exit", "right": true, "reasoning_chars": 1410, "tokens": 447, "ms": 16038}

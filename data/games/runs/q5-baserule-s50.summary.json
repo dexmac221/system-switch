@@ -1,0 +1,71 @@
+{
+  "kills": 12,
+  "deaths": 4,
+  "decisions": 350,
+  "errors": 0,
+  "pickups": 17,
+  "levels_completed": 0,
+  "doors_opened": 9,
+  "stuck_recoveries": 4,
+  "bumps": 0,
+  "damage": 400.0,
+  "status": "completed",
+  "error": null,
+  "model": "llm",
+  "final_map": "MAP01",
+  "game_seconds": 180.0,
+  "wall_seconds": 180.0,
+  "latency_ms_median": 43.44,
+  "latency_ms_p90": 51.99,
+  "input_tokens_total": 172604,
+  "input_tokens_avg": 493.15,
+  "external_api_cost_usd": 0,
+  "local_compute_cost_usd": null,
+  "enemy_in_view_share": 0.4141,
+  "action_ticks": {
+    "wait": 261,
+    "explore": 4868,
+    "open_door": 178,
+    "attack": 760,
+    "pickup": 233
+  },
+  "reflex_ticks": {
+    "select_model_weapon": 102,
+    "waypoint": 5245,
+    "open_selected_door": 89,
+    "aim_selected_enemy": 635,
+    "approach_selected_enemy": 163,
+    "stuck": 4,
+    "recover_same_goal": 168,
+    "approach_selected_item": 19
+  },
+  "resource_gains": {
+    "hp": 25.0,
+    "armor": 17.0,
+    "ammo_2": 30,
+    "ammo_3": 4,
+    "weapon_3": 1
+  },
+  "video_frames": 0,
+  "laya_health": {
+    "status": "ok",
+    "models": {
+      "doom-adapted": {
+        "status": "ok",
+        "models": {
+          "doom-adapted": "cuda"
+        },
+        "checkpoint": "laya-base",
+        "weights_sha256": "891102d372688fc2a094dac56a384bc537b87c63f21f9f3dac0be2b7cbc8d86c",
+        "laya_source_commit": "42626c348753fbb17572a813127df2278a1ec527"
+      },
+      "llm": "switch"
+    },
+    "switch": {
+      "mode": "rule",
+      "thinker": "http://127.0.0.1:9",
+      "gate_sys": null
+    }
+  },
+  "run": "20261005_140827_622009_q5-baserule-s50"
+}

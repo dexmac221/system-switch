@@ -1,0 +1,54 @@
+{
+ "kills": 0,
+ "deaths": 0,
+ "decisions": 350,
+ "errors": 0,
+ "pickups": 0,
+ "levels_completed": 0,
+ "doors_opened": 0,
+ "stuck_recoveries": 0,
+ "bumps": 0,
+ "damage": 0,
+ "status": "completed",
+ "error": null,
+ "model": "llm",
+ "final_map": "MAP01",
+ "game_seconds": 180.0,
+ "wall_seconds": 180.0,
+ "latency_ms_median": 32.47,
+ "latency_ms_p90": 32.93,
+ "input_tokens_total": 90300,
+ "input_tokens_avg": 258,
+ "external_api_cost_usd": 0,
+ "local_compute_cost_usd": null,
+ "enemy_in_view_share": 0.0,
+ "action_ticks": {
+  "wait": 6300
+ },
+ "reflex_ticks": {
+  "select_model_weapon": 2
+ },
+ "resource_gains": {},
+ "video_frames": 6300,
+ "laya_health": {
+  "status": "ok",
+  "models": {
+   "doom-adapted": {
+    "status": "ok",
+    "models": {
+     "doom-adapted": "cuda"
+    },
+    "checkpoint": "laya-base",
+    "weights_sha256": "891102d372688fc2a094dac56a384bc537b87c63f21f9f3dac0be2b7cbc8d86c",
+    "laya_source_commit": "42626c348753fbb17572a813127df2278a1ec527"
+   },
+   "llm": "switch"
+  },
+  "switch": {
+   "mode": "off",
+   "thinker": "http://thinker-host:8090",
+   "gate_sys": null
+  }
+ },
+ "run": "20261005_131751_428018_r5-baseoff-s50"
+}
