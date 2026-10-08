@@ -2,7 +2,8 @@
 
 **When should a fast decision model stop and think?** Code and data of the paper *System Switch: When
 Should a Fast Decision Model Stop and Think? A closed-loop study with typed-decision models and a
-vision reasoner in Doom* (Gianluca Bailo, 2026; arXiv link to follow).
+vision reasoner in Doom* (Gianluca Bailo, 2026), [arXiv:2610.09683](https://arxiv.org/abs/2610.09683)
+([PDF](https://arxiv.org/pdf/2610.09683)).
 
 A fast "System One" typed-decision actor plays Doom through
 [doomLaya](https://github.com/azalio/doomLaya) and takes every decision. A gate watches the recent
@@ -71,6 +72,22 @@ Offline results are on 900 held-out questions; 95% intervals resample games.
    The actor must run on a GPU. doomLaya does not wait for it: at about 2 s per decision a game has
    107 decisions instead of 350, and it plays differently.
 
+## Citation
+
+```bibtex
+@misc{bailo2026systemswitch,
+  title         = {System Switch: When Should a Fast Decision Model Stop and Think?},
+  author        = {Gian Luca Bailo},
+  year          = {2026},
+  eprint        = {2610.09683},
+  archivePrefix = {arXiv},
+  primaryClass  = {cs.AI},
+  doi           = {10.48550/arXiv.2610.09683},
+  url           = {https://arxiv.org/abs/2610.09683}
+}
+```
+
 ## License
 
-Apache License 2.0; see `LICENSE` and `NOTICE` for the third-party work this builds on.
+Apache License 2.0; see `LICENSE` and `NOTICE` for the third-party work this builds on. The paper is on
+arXiv under CC BY 4.0.
