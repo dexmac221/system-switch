@@ -1,0 +1,73 @@
+{
+ "giri": [
+  "switch/giri/gemma2",
+  "switch/giri/dagger1"
+ ],
+ "semi": [
+  100,
+  101,
+  102,
+  103,
+  104,
+  105,
+  106,
+  107,
+  108,
+  109,
+  110,
+  111
+ ],
+ "val_semi": [
+  110,
+  111
+ ],
+ "train": 1814,
+ "validation": 373,
+ "tolte_per_tetto": 0,
+ "tetto_tipo": null,
+ "train_tipi": [
+  [
+   "collect",
+   638
+  ],
+  [
+   "shoot",
+   435
+  ],
+  [
+   "exit",
+   374
+  ],
+  [
+   "explore",
+   322
+  ],
+  [
+   "open",
+   45
+  ]
+ ],
+ "val_tipi": [
+  [
+   "explore",
+   117
+  ],
+  [
+   "collect",
+   101
+  ],
+  [
+   "exit",
+   88
+  ],
+  [
+   "shoot",
+   54
+  ],
+  [
+   "open",
+   13
+  ]
+ ],
+ "accordo_allievo_maestro_val": 0.22
+}

@@ -1,0 +1,72 @@
+{
+ "giri": [
+  "switch/giri/gemma2"
+ ],
+ "semi": [
+  100,
+  101,
+  102,
+  103,
+  104,
+  105,
+  106,
+  107,
+  108,
+  109,
+  110,
+  111
+ ],
+ "val_semi": [
+  110,
+  111
+ ],
+ "train": 1459,
+ "validation": 347,
+ "tolte_per_tetto": 0,
+ "tetto_tipo": null,
+ "train_tipi": [
+  [
+   "collect",
+   492
+  ],
+  [
+   "explore",
+   314
+  ],
+  [
+   "exit",
+   310
+  ],
+  [
+   "shoot",
+   303
+  ],
+  [
+   "open",
+   40
+  ]
+ ],
+ "val_tipi": [
+  [
+   "explore",
+   112
+  ],
+  [
+   "collect",
+   97
+  ],
+  [
+   "exit",
+   79
+  ],
+  [
+   "shoot",
+   46
+  ],
+  [
+   "open",
+   13
+  ]
+ ],
+ "accordo_allievo_maestro_val": 0.19
+}

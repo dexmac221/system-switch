@@ -1,0 +1,14 @@
+2026-10-13 21:48:34 giro deepseek1: maestro deepseek-v4.1-flash:cloud, obiettivo 99999 etichette, semi da 100, 180 s, MAP01
+2026-10-13 21:52:37 seme 100: esce 148.514 | uccisioni 13 morti 0 | decisioni 295 | etichette 130 (valide 130) | orologio 227 s | TOTALE etichette 130 | token 138098/4361 | spesa $0.047
+2026-10-13 21:55:16 seme 101: esce 152.286 | uccisioni 17 morti 1 | decisioni 302 | etichette 140 (valide 140) | orologio 158 s | TOTALE etichette 270 | token 287079/9236 | spesa $0.097
+2026-10-13 21:58:01 seme 102: esce no | uccisioni 22 morti 1 | decisioni 350 | etichette 135 (valide 135) | orologio 165 s | TOTALE etichette 405 | token 429976/13737 | spesa $0.145
+2026-10-13 22:00:26 seme 103: esce 142.686 | uccisioni 13 morti 1 | decisioni 284 | etichette 123 (valide 123) | orologio 144 s | TOTALE etichette 528 | token 561561/18082 | spesa $0.190
+2026-10-13 22:03:18 seme 104: esce 162.229 | uccisioni 17 morti 1 | decisioni 322 | etichette 153 (valide 153) | orologio 171 s | TOTALE etichette 681 | token 725199/23260 | spesa $0.245
+2026-10-13 22:06:09 seme 105: esce 164.971 | uccisioni 14 morti 0 | decisioni 327 | etichette 172 (valide 172) | orologio 171 s | TOTALE etichette 853 | token 909227/29371 | spesa $0.308
+2026-10-13 22:09:59 seme 106: esce no | uccisioni 9 morti 0 | decisioni 350 | etichette 220 (valide 220) | orologio 230 s | TOTALE etichette 1073 | token 1146724/37583 | spesa $0.389
+2026-10-13 22:11:41 seme 107: esce 97.429 | uccisioni 13 morti 0 | decisioni 196 | etichette 85 (valide 85) | orologio 101 s | TOTALE etichette 1158 | token 1237917/40615 | spesa $0.420
+2026-10-13 22:12:55 seme 108: esce 86.457 | uccisioni 13 morti 0 | decisioni 174 | etichette 65 (valide 65) | orologio 73 s | TOTALE etichette 1223 | token 1305891/42714 | spesa $0.443
+2026-10-13 22:16:00 seme 109: esce no | uccisioni 19 morti 1 | decisioni 350 | etichette 172 (valide 172) | orologio 184 s | TOTALE etichette 1395 | token 1491450/48829 | spesa $0.506
+2026-10-13 22:18:56 seme 110: esce no | uccisioni 19 morti 2 | decisioni 350 | etichette 131 (valide 131) | orologio 175 s | TOTALE etichette 1526 | token 1632692/53516 | spesa $0.554
+2026-10-13 22:21:51 seme 111: esce no | uccisioni 16 morti 1 | decisioni 350 | etichette 158 (valide 158) | orologio 174 s | TOTALE etichette 1684 | token 1800862/58964 | spesa $0.611
+2026-10-13 22:21:51 giro deepseek1 finito dopo 12 partite

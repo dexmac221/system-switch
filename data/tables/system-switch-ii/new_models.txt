@@ -1,0 +1,75 @@
+600 command and 300 weapon questions (as released); gold answer is to collect on 25% of the command questions
+== New actors on the 600 command questions (doomLaya's option order) and the 300 weapon questions
+model                                                           command   ECE             AUROC weapon coll. first 30% def.         over random
+Laya typed-decisions, classic encoder via laya 0.5   0.587 [0.48, 0.68]  0.29 0.787 [0.72, 0.84]  0.413   44%   36%    0.670 +0.052 [+0.024, +0.078]
+Laya base, classic encoder via laya 0.5              0.560 [0.44, 0.66]  0.16 0.894 [0.85, 0.93]  0.370   43%   39%    0.750 +0.151 [+0.111, +0.168]
+Laya 0.5 vega-U, Qwen3.5-0.8B reader                 0.133 [0.08, 0.22]  0.22 0.635 [0.48, 0.77]  0.407   96%   19%    0.287 -0.014 [-0.040, +0.021]
+Laya 0.5 vega-U, Qwen3.5-4B reader                   0.208 [0.10, 0.33]  0.13 0.422 [0.30, 0.64]  0.597   84%    3%    0.343 -0.010 [-0.068, +0.042]
+pplx-decider-flash v1.3 (4.5B)                       0.608 [0.52, 0.69]  0.15 0.755 [0.68, 0.81]  0.993   49%   67%    0.647 +0.014 [-0.019, +0.039]
+StartLux v1.1 4B AutoThink, no thought               0.235 [0.17, 0.32]  0.34 0.681 [0.58, 0.78]  0.970   88%   79%    0.378 +0.007 [-0.037, +0.049]
+StartLux v1.1 9B AutoThink, no thought               0.252 [0.18, 0.34]  0.25 0.710 [0.60, 0.81]  0.987   84%   73%    0.467 +0.084 [+0.015, +0.126]
+
+== Paper I's actors on the same question set (records of the first paper)
+Laya base                                            0.562 [0.45, 0.66]  0.16 0.891 [0.85, 0.92]  0.377   43%          0.747 +0.147 [+0.106, +0.166]
+Kev 0.8B                                             0.292 [0.22, 0.39]  0.14 0.826 [0.76, 0.88]  0.053   43%          0.507 +0.096 [+0.038, +0.143]
+Laya typed-decisions                                 0.587 [0.48, 0.68]  0.29 0.769 [0.70, 0.83]  0.420   44%          0.667 +0.049 [+0.019, +0.076]
+Kev 4B                                               0.400 [0.31, 0.52]  0.10 0.698 [0.58, 0.80]  0.973   72%          0.545 +0.058 [-0.025, +0.113]
+Clef-Flash 9B                                        0.540 [0.43, 0.63]  0.10 0.684 [0.59, 0.76]  0.600   54%          0.587 +0.002 [-0.029, +0.021]
+Lev 4B                                               0.433 [0.31, 0.55]  0.24 0.606 [0.51, 0.70]  0.490   70%          0.508 -0.002 [-0.046, +0.036]
+Kev 9B                                               0.602 [0.49, 0.69]  0.28 0.605 [0.48, 0.71]  0.997   48%          0.620 -0.008 [-0.041, +0.014]
+Strands Decider 2B                                   0.590 [0.49, 0.68]  0.21 0.603 [0.47, 0.71]  1.000   51%          0.603 -0.017 [-0.057, +0.016]
+Julia-1                                              0.135 [0.07, 0.24]  0.57 0.449 [0.34, 0.57]  0.740   84%          0.328 +0.027 [-0.027, +0.053]
+Laya-v3 (trained)                                    0.585 [0.47, 0.70]  0.14 0.873 [0.83, 0.91]  0.973   29%          0.722 +0.105 [+0.060, +0.151]
+doomGemma (trained)                                  0.860 [0.81, 0.90]  0.05 0.857 [0.80, 0.90]  1.000   21%          0.842 +0.033 [+0.008, +0.059]
+thinkers alone on the command questions: qwen36uff_think 0.690, qwen36uff_fast 0.582, gemma4uff_think 0.503, gemma4uff_fast 0.565
+
+== What Qwen3.6 with reasoning faces on the questions each new actor defers (30% least confident)
+   Laya 0.5 vega-U, Qwen3.5-0.8B reader         thinker on deferred 0.611 (overall 0.690); actor on deferred 0.100; fixes 100, breaks 8
+   Laya 0.5 vega-U, Qwen3.5-4B reader           thinker on deferred 0.644 (overall 0.690); actor on deferred 0.194; fixes 81, breaks 0
+   pplx-decider-flash v1.3 (4.5B)               thinker on deferred 0.456 (overall 0.690); actor on deferred 0.328; fixes 56, breaks 33
+   StartLux v1.1 4B AutoThink, no thought       thinker on deferred 0.639 (overall 0.690); actor on deferred 0.161; fixes 98, breaks 12
+   StartLux v1.1 9B AutoThink, no thought       thinker on deferred 0.833 (overall 0.690); actor on deferred 0.117; fixes 135, breaks 6
+
+== The classic Laya encoder through the laya 0.5 package against the first paper's records (doomLaya's PyTorch server)
+   laya05_classic_typed vs laya-typed: same choice on 99.1% of the 900 questions (8 differ); |confidence difference| median 0.0019, max 0.5924
+   laya05_classic_base  vs laya-base : same choice on 99.1% of the 900 questions (8 differ); |confidence difference| median 0.0057, max 0.4683
+
+== The built-in gate of Laya 0.5 (vega-U): its abstain flag
+   laya05_vega_08b: abstains on 597 of 600 command questions (prediction set with more than one option: 57%); accuracy where it does not abstain: 0.000 on 3
+      weapon questions: abstains on 300 of 300; accuracy where it abstains 0.407
+      deferring the abstentions to Qwen3.6: 0.687 (Qwen3.6 alone: 0.690)
+   laya05_vega_4b: abstains on 600 of 600 command questions (prediction set with more than one option: 10%); accuracy where it does not abstain: no question kept
+      weapon questions: abstains on 300 of 300; accuracy where it abstains 0.597
+      deferring the abstentions to Qwen3.6: 0.690 (Qwen3.6 alone: 0.690)
+
+== StartLux AutoThink: the same model without and with its thought (600 command questions)
+   4b: no thought 0.235, always thinking 0.292 (difference +0.057 [-0.012, +0.142]; thought: median 706 tokens, 13.2 s); chooses collect 88% without and 82% with the thought
+      gate 0.6: thinks on 70% of the questions, accuracy 0.292
+      gate 0.9: thinks on 96% of the questions, accuracy 0.292
+      thinking on its 10% least confident answers: 0.227 (at random 0.241; difference -0.014 [-0.025, -0.002])
+      thinking on its 30% least confident answers: 0.247 (at random 0.252; difference -0.005 [-0.039, +0.029])
+      thinking on its 50% least confident answers: 0.252 (at random 0.263; difference -0.012 [-0.040, +0.027])
+   9b: no thought 0.252, always thinking 0.305 (difference +0.053 [+0.023, +0.083]; thought: median 584 tokens, 16.9 s); chooses collect 84% without and 70% with the thought
+      gate 0.6: thinks on 80% of the questions, accuracy 0.303
+      gate 0.9: thinks on 95% of the questions, accuracy 0.305
+      thinking on its 10% least confident answers: 0.258 (at random 0.257; difference +0.001 [-0.006, +0.011])
+      thinking on its 30% least confident answers: 0.268 (at random 0.268; difference +0.001 [-0.014, +0.017])
+      thinking on its 50% least confident answers: 0.282 (at random 0.278; difference +0.003 [-0.011, +0.018])
+
+== StartLux with its thought as the thinker behind Paper I's actors (30% least confident deferred)
+   thinker: StartLux 4b
+      laya-base   alone 0.562; deferring to StartLux 0.632; to Qwen3.6 0.747
+      laya-typed  alone 0.587; deferring to StartLux 0.575; to Qwen3.6 0.667
+      kev-9b      alone 0.602; deferring to StartLux 0.510; to Qwen3.6 0.620
+      strands-2b  alone 0.590; deferring to StartLux 0.497; to Qwen3.6 0.603
+   thinker: StartLux 9b
+      laya-base   alone 0.562; deferring to StartLux 0.658; to Qwen3.6 0.747
+      laya-typed  alone 0.587; deferring to StartLux 0.587; to Qwen3.6 0.667
+      kev-9b      alone 0.602; deferring to StartLux 0.510; to Qwen3.6 0.620
+      strands-2b  alone 0.590; deferring to StartLux 0.508; to Qwen3.6 0.603
+
+== Option order: StartLux with the options shuffled per question
+   4b fixed     command 0.235 AUROC 0.681 collect 88% first option 79% | weapon 0.970
+   4b shuffled  command 0.287 AUROC 0.625 collect 83% first option 15% | weapon 0.847
+   9b fixed     command 0.252 AUROC 0.710 collect 84% first option 73% | weapon 0.987
+   9b shuffled  command 0.340 AUROC 0.585 collect 75% first option 14% | weapon 0.903

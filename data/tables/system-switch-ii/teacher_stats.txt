@@ -1,0 +1,79 @@
+variant                                    checkpoint                    exits    95% exact exit time deaths kills  decisions by command type
+zero-shot student (Laya typed-decisions)   typed-decisions               0/18  [0.00, 0.19]     nan s      9   156  shoot 22%, collect 60%, exit 1%, explore 7%, open_door 4%, wait 5%
+Laya-v3 (trained on the rule oracle)       laya-doom-v3                 17/18  [0.73, 1.00]      75 s      0   245  shoot 28%, collect 29%, exit 31%, explore 1%, open_door 4%, wait 7%
+Gemma teacher, run 1                       laya-maestro-gemma2          16/18  [0.65, 0.99]     115 s     14   294  shoot 44%, collect 22%, exit 19%, explore 9%, open_door 6%, wait 0%
+Gemma teacher, run 2                       laya-maestro-gemma2-b        11/18  [0.36, 0.83]     111 s     31   305  shoot 52%, collect 14%, exit 19%, explore 10%, open_door 5%, wait 0%
+Gemma teacher, run 3                       laya-maestro-gemma2-c        13/18  [0.47, 0.90]     111 s     20   284  shoot 49%, collect 18%, exit 16%, explore 11%, open_door 6%, wait 0%
+Gemma teacher, up to 15 epochs             laya-maestro-gemma2-e15      14/18  [0.52, 0.94]     128 s     15   293  shoot 40%, collect 23%, exit 21%, explore 12%, open_door 4%, wait 0%
+DeepSeek teacher, run 1                    laya-maestro-deepseek1-a     11/18  [0.36, 0.83]     112 s     20   279  shoot 47%, collect 33%, exit 15%, explore 0%, open_door 5%, wait 0%
+DeepSeek teacher, run 2                    laya-maestro-deepseek1-b      9/18  [0.26, 0.74]      98 s     32   326  shoot 48%, collect 27%, exit 19%, explore 0%, open_door 6%, wait 0%
+DeepSeek teacher, run 3                    laya-maestro-deepseek1-c     14/18  [0.52, 0.94]     103 s     23   359  shoot 52%, collect 18%, exit 25%, explore 0%, open_door 5%, wait 0%
+DeepSeek teacher, up to 15 epochs          laya-maestro-deepseek1-e15   10/18  [0.31, 0.78]      97 s     23   268  shoot 51%, collect 29%, exit 15%, explore 1%, open_door 4%, wait 0%
+Gemma + DAgger round, run 1                laya-dagger1-a                4/18  [0.06, 0.48]     123 s      7   280  shoot 27%, collect 19%, exit 20%, explore 28%, open_door 6%, wait 0%
+Gemma + DAgger round, run 2                laya-dagger1-b                0/18  [0.00, 0.19]     nan s      4   301  shoot 21%, collect 17%, exit 17%, explore 40%, open_door 4%, wait 0%
+
+game time played (a game stops at the exit or after 180 s) and deaths per 10 minutes of play:
+   base         54.0 min,  9 deaths,  1.7 per 10 min
+   v3           24.3 min,  0 deaths,  0.0 per 10 min
+   gemma5       36.7 min, 14 deaths,  3.8 per 10 min
+   gemma5b      41.4 min, 31 deaths,  7.5 per 10 min
+   gemma5c      39.0 min, 20 deaths,  5.1 per 10 min
+   gemma15      41.8 min, 15 deaths,  3.6 per 10 min
+   ds5a         41.5 min, 20 deaths,  4.8 per 10 min
+   ds5b         41.7 min, 32 deaths,  7.7 per 10 min
+   ds5c         35.9 min, 23 deaths,  6.4 per 10 min
+   deepseek15   40.1 min, 23 deaths,  5.7 per 10 min
+   dagger_a     50.2 min,  7 deaths,  1.4 per 10 min
+   dagger_b     54.0 min,  4 deaths,  0.7 per 10 min
+
+paired on the 18 seeds (exits; sign test on the discordant seeds, two-sided):
+   base       0/18 vs ds5b       9/18: only base exits on 0 seeds, only ds5b on 9; p = 0.0039
+   base       0/18 vs gemma5    16/18: only base exits on 0 seeds, only gemma5 on 16; p = 0.0000
+   gemma5    16/18 vs gemma5b   11/18: only gemma5 exits on 6 seeds, only gemma5b on 1; p = 0.1250
+   gemma5    16/18 vs v3        17/18: only gemma5 exits on 1 seeds, only v3 on 2; p = 1.0000
+   gemma5b   11/18 vs v3        17/18: only gemma5b exits on 0 seeds, only v3 on 6; p = 0.0312
+   ds5b       9/18 vs v3        17/18: only ds5b exits on 0 seeds, only v3 on 8; p = 0.0078
+   gemma5    16/18 vs dagger_a   4/18: only gemma5 exits on 13 seeds, only dagger_a on 1; p = 0.0018
+   gemma5b   11/18 vs dagger_a   4/18: only gemma5b exits on 9 seeds, only dagger_a on 2; p = 0.0654
+   ds5b       9/18 vs dagger_a   4/18: only ds5b exits on 8 seeds, only dagger_a on 3; p = 0.2266
+   gemma5    16/18 vs gemma15   14/18: only gemma5 exits on 4 seeds, only gemma15 on 2; p = 0.6875
+   gemma5    16/18 vs deepseek15 10/18: only gemma5 exits on 6 seeds, only deepseek15 on 0; p = 0.0312
+   gemma15   14/18 vs deepseek15 10/18: only gemma15 exits on 7 seeds, only deepseek15 on 3; p = 0.3438
+
+each single-round student against Laya-v3 on the 18 seeds (sign test):
+   gemma5      16/18: only the student on 1 seeds, only Laya-v3 on 2; p = 1.000
+   gemma5b     11/18: only the student on 0 seeds, only Laya-v3 on 6; p = 0.031
+   gemma5c     13/18: only the student on 1 seeds, only Laya-v3 on 5; p = 0.219
+   gemma15     14/18: only the student on 0 seeds, only Laya-v3 on 3; p = 0.250
+   ds5a        11/18: only the student on 0 seeds, only Laya-v3 on 6; p = 0.031
+   ds5b         9/18: only the student on 0 seeds, only Laya-v3 on 8; p = 0.008
+   ds5c        14/18: only the student on 1 seeds, only Laya-v3 on 4; p = 0.375
+   deepseek15  10/18: only the student on 1 seeds, only Laya-v3 on 8; p = 0.039
+   pooled: the eight students exit in 98 of 144 games (68%); Laya-v3 in 17 of 18
+
+are the students' exit rates on the 18 seeds distinguishable? (Cochran's Q, same seeds)
+   three Gemma runs, same data and recipe     Q =  4.75, p = 0.09
+   three DeepSeek runs, same data and recipe  Q =  2.92, p = 0.23
+   six 5-epoch runs                           Q =  8.25, p = 0.14
+   all eight single-round students            Q = 10.34, p = 0.17
+   exits of the eight: [16, 11, 13, 14, 11, 9, 14, 10]; sample standard deviation 2.4; binomial standard deviation of 18 games at the pooled rate 2.0
+
+teachers, same recipe (5 epochs), three runs each: Gemma [16, 11, 13] = 40/54, deaths 65; DeepSeek [11, 9, 14] = 34/54, deaths 75
+   exact permutation test over runs (20 splits), difference of mean exits +2.00 of 18: two-sided p = 0.50
+
+validation agreement with the teacher (held-out seeds 110-111) against play:
+   gemma5      before training 0.190; best epoch  5 of  5: 0.510  ->  exits 16/18, deaths 14
+   gemma5b     before training 0.190; best epoch  3 of  5: 0.522  ->  exits 11/18, deaths 31
+   gemma5c     before training 0.190; best epoch  3 of  5: 0.507  ->  exits 13/18, deaths 20
+   gemma15     before training 0.190; best epoch  9 of 15: 0.591  ->  exits 14/18, deaths 15
+   ds5a        before training 0.356; best epoch  4 of  5: 0.564  ->  exits 11/18, deaths 20
+   ds5b        before training 0.356; best epoch  4 of  5: 0.533  ->  exits  9/18, deaths 32
+   ds5c        before training 0.356; best epoch  4 of  5: 0.536  ->  exits 14/18, deaths 23
+   deepseek15  before training 0.356; best epoch  9 of 15: 0.602  ->  exits 10/18, deaths 23
+   dagger_a    before training 0.198; best epoch  5 of  5: 0.592  ->  exits  4/18, deaths 7
+   dagger_b    before training 0.198; best epoch  5 of  5: 0.619  ->  exits  0/18, deaths 4
+   rank correlation of validation agreement with exits over the 8 single-round runs: -0.28; Gemma runs only +0.00, DeepSeek runs only +0.20
+
+exits of the ten trained students, sorted: [(0, 'dagger_b'), (4, 'dagger_a'), (9, 'ds5b'), (10, 'deepseek15'), (11, 'ds5a'), (11, 'gemma5b'), (13, 'gemma5c'), (14, 'ds5c'), (14, 'gemma15'), (16, 'gemma5')]
+   the two DAgger runs are the two lowest of ten: probability under exchangeability 1/45 = 0.022
+   exits of the 8 students trained on one round: min 9, max 16; deaths min 14, max 32

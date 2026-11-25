@@ -1,0 +1,48 @@
+== gemma1: Gemma 4 31B, no memory of its own decisions; student: zero-shot; teacher model {'gemma4:31b-cloud': 2022}
+   games 12, reach the exit 3, deaths 7, decisions 3992; labels 2023 (valid 2022), 51% of the decisions; cost $0.309; teacher latency median 0.6 s; sees the frame in 100% of the labels
+   gate open        1895 (94%)  student agrees with teacher 22% (same command type 46%); student's median confidence 0.24
+   surprise check    127 (6%)  student agrees with teacher 35% (same command type 54%); student's median confidence 0.30
+   gate open       AUROC of the student's confidence for agreeing with the teacher 0.60; confidence below 0.3 on 84%; mean confidence 0.26; agreement by confidence tercile 18%, 17%, 30%
+   surprise check  AUROC of the student's confidence for agreeing with the teacher 0.74; confidence below 0.3 on 48%; mean confidence 0.33; agreement by confidence tercile 19%, 24%, 63%
+   gate reasons (a label can have several): unsure 1772 (94%), no progress 167 (9%), loop 45 (2%), stuck 27 (1%)
+   teacher chooses: collect 44%, exit 27%, explore 18%, shoot 9%, open_door 3%
+   student chooses: collect 75%, shoot 14%, explore 7%, open_door 4%, exit 0%, wait 0%
+   teacher changes command type between consecutive labels: 683/1664 = 41%
+   executor report at the labelled states: executing 77%, blocked 15%, unavailable 8%, waiting 0%
+   labels of seeds 100-109 (training): 1787, of which surprise checks 6%; labels of seeds 110-111 (held out): 235
+== gemma2: Gemma 4 31B; student: zero-shot; teacher model {'gemma4:31b-cloud': 1806}
+   games 12, reach the exit 7, deaths 3, decisions 3557; labels 1807 (valid 1806), 51% of the decisions; cost $0.345; teacher latency median 0.6 s; sees the frame in 100% of the labels
+   gate open        1694 (94%)  student agrees with teacher 29% (same command type 50%); student's median confidence 0.24
+   surprise check    112 (6%)  student agrees with teacher 42% (same command type 58%); student's median confidence 0.31
+   gate open       AUROC of the student's confidence for agreeing with the teacher 0.76; confidence below 0.3 on 76%; mean confidence 0.27; agreement by confidence tercile 14%, 14%, 58%
+   surprise check  AUROC of the student's confidence for agreeing with the teacher 0.82; confidence below 0.3 on 47%; mean confidence 0.34; agreement by confidence tercile 16%, 32%, 76%
+   gate reasons (a label can have several): unsure 1455 (86%), no progress 236 (14%), loop 201 (12%), stuck 23 (1%)
+   teacher chooses: collect 33%, explore 24%, exit 22%, shoot 19%, open_door 3%
+   student chooses: collect 69%, shoot 22%, open_door 5%, explore 3%, exit 0%
+   teacher changes command type between consecutive labels: 288/1485 = 19%
+   executor report at the labelled states: executing 73%, blocked 18%, unavailable 9%, waiting 0%
+   labels of seeds 100-109 (training): 1459, of which surprise checks 6%; labels of seeds 110-111 (held out): 347
+== deepseek1: DeepSeek V4.1 Flash; student: zero-shot; teacher model {'deepseek-v4.1-flash:cloud': 1684}
+   games 12, reach the exit 7, deaths 8, decisions 3650; labels 1684 (valid 1684), 46% of the decisions; cost $0.611; teacher latency median 0.6 s; sees the frame in 100% of the labels
+   gate open        1553 (92%)  student agrees with teacher 29% (same command type 53%); student's median confidence 0.24
+   surprise check    131 (8%)  student agrees with teacher 34% (same command type 53%); student's median confidence 0.30
+   gate open       AUROC of the student's confidence for agreeing with the teacher 0.62; confidence below 0.3 on 81%; mean confidence 0.26; agreement by confidence tercile 22%, 24%, 40%
+   surprise check  AUROC of the student's confidence for agreeing with the teacher 0.68; confidence below 0.3 on 50%; mean confidence 0.33; agreement by confidence tercile 19%, 27%, 57%
+   gate reasons (a label can have several): unsure 1473 (95%), no progress 62 (4%), stuck 30 (2%), loop 20 (1%)
+   teacher chooses: collect 43%, exit 28%, shoot 15%, explore 12%, open_door 2%
+   student chooses: collect 72%, shoot 18%, open_door 5%, explore 4%, exit 0%
+   teacher changes command type between consecutive labels: 202/1314 = 15%
+   executor report at the labelled states: executing 74%, unavailable 13%, blocked 12%, waiting 1%
+   labels of seeds 100-109 (training): 1395, of which surprise checks 7%; labels of seeds 110-111 (held out): 289
+== dagger1: Gemma 4 31B; student: trained on gemma2 (run 1); teacher model {'gemma4:31b-cloud': 381}
+   games 12, reach the exit 10, deaths 8, decisions 3062; labels 381 (valid 381), 12% of the decisions; cost $0.072; teacher latency median 0.6 s; sees the frame in 100% of the labels
+   gate open         193 (51%)  student agrees with teacher 56% (same command type 64%); student's median confidence 0.69
+   surprise check    188 (49%)  student agrees with teacher 64% (same command type 68%); student's median confidence 0.65
+   gate open       AUROC of the student's confidence for agreeing with the teacher 0.71; confidence below 0.3 on 5%; mean confidence 0.67; agreement by confidence tercile 39%, 45%, 83%
+   surprise check  AUROC of the student's confidence for agreeing with the teacher 0.67; confidence below 0.3 on 2%; mean confidence 0.66; agreement by confidence tercile 48%, 62%, 81%
+   gate reasons (a label can have several): no progress 113 (59%), loop 81 (42%), stuck 30 (16%), unsure 3 (2%)
+   teacher chooses: collect 39%, shoot 37%, exit 19%, explore 3%, open_door 1%
+   student chooses: shoot 48%, collect 23%, exit 20%, explore 6%, open_door 4%
+   teacher changes command type between consecutive labels: 32/178 = 18%
+   executor report at the labelled states: executing 77%, unavailable 16%, blocked 6%, waiting 0%
+   labels of seeds 100-109 (training): 355, of which surprise checks 46%; labels of seeds 110-111 (held out): 26

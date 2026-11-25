@@ -5,6 +5,12 @@ Should a Fast Decision Model Stop and Think? A closed-loop study with typed-deci
 vision reasoner in Doom* (Gianluca Bailo, 2026), [arXiv:2610.09683](https://arxiv.org/abs/2610.09683)
 ([PDF](https://arxiv.org/pdf/2610.09683)).
 
+Since November 2026 it also holds the code and data of the follow-up paper *System Switch II: What to Defer
+and What to Teach* (Gianluca Bailo, 2026; arXiv link to follow): what the thinker faces on the deferred
+questions, a gate that predicts where the thinker fixes the actor, the decision models released after the
+first paper, and a teacher mode in which a language model labels the states selected by the gate, with the
+game paused, to train the fast model. See [System Switch II](#system-switch-ii) below.
+
 A fast "System One" typed-decision actor plays Doom through
 [doomLaya](https://github.com/azalio/doomLaya) and takes every decision. A gate watches the recent
 history (low confidence, no progress, blocked commands, loops, no new area). When it opens, a reasoning
@@ -39,7 +45,7 @@ Offline results are on 900 held-out questions; 95% intervals resample games.
 
 | path | what |
 |---|---|
-| `src/switch.py` | the System Switch: gate, thinker, plans (`--mode off/switch/rule/advise/narrate`, `--triggers`, `--basics`, `--commit`, `--no-image`, ...) |
+| `src/switch.py` | the System Switch: gate, thinker, plans (`--mode off/switch/rule/advise/narrate`, and `maestro` for System Switch II, `--triggers`, `--basics`, `--commit`, `--no-image`, ...) |
 | `src/pilot.sh` | one game through the switch, one JSON line out |
 | `src/serve_systemone.py` | doomLaya `/predict` bridge to any llama.cpp `/v1/systemone` server |
 | `src/serve_llm.py` | doomLaya `/predict` bridge to a chat LLM (doomGemma) |
@@ -50,6 +56,9 @@ Offline results are on 900 held-out questions; 95% intervals resample games.
 | `src/paper_tables.py`, `src/review_analyses.py`, `src/stats_ci.py`, `src/deferral_curve.py` | every offline table and the figure: accuracy, ECE, AUROC overall and within category, collect bias, deferral, selection on held-out games |
 | `src/summarize_games.py`, `src/thought_stats.py`, `src/loop_metrics.py`, `src/thoughts_to_srt.py` | the closed-loop games: outcomes, thoughts, coverage, closest approach to the exit, doors, thinker load |
 | `src/deferred_questions.py`, `src/cost_ratio.py` | added in November 2026, after the work that cited the paper: what the thinker faces on the questions each actor defers (accuracy there vs. overall, errors fixed and introduced, with intervals that resample games), and the measured cost ratio of a thought to an actor call |
+| `src/testset.py`, `src/question_evaluator.py`, `src/new_models.py`, `src/teacher_rounds.py`, `src/teacher_stats.py` | System Switch II: the distinct-question option shared by every analysis (`--distinct`), the question evaluator and the collect rule, the new decision models, the teacher's labelling rounds and the students' games |
+| `src/eval_decision_models.py` | System Switch II: the harness that ran the new decision models (StartLux AutoThink through llama-server, pplx-decider through its reference code, Laya 0.5 classic and vega-U) on the test set |
+| `src/teacher_round.sh`, `src/labels_to_training.py` | System Switch II: one teaching round (`switch.py --mode maestro`, the game waits for the model) and the conversion of its labels to doomLaya's training format (comments in Italian) |
 | `patches/` | `doomLaya-agent.patch` (adds the `llm` model to doomLaya's agent), then `apply_switch_patch.py` (adds `--send-frame`) |
 | `data/` | test set, per-question records of every actor and thinker, switch logs and per-tic positions of every game (see `data/README.md`) |
 
@@ -73,6 +82,27 @@ Offline results are on 900 held-out questions; 95% intervals resample games.
 5. **Closed loop**: `src/pilot.sh <tag> <actor /predict URL> <actor model> <mode> MAP01 <seed> [switch args]`.
    The actor must run on a GPU. doomLaya does not wait for it: at about 2 s per decision a game has
    107 decisions instead of 350, and it plays differently.
+
+## System Switch II
+
+Every number of the second paper is printed by one script from the records in `data/`, without running any
+model; the outputs are in `data/tables/system-switch-ii/`. `--distinct` counts each distinct question once
+(the test set repeats questions: 440 of the 600 command questions and 242 of the 300 weapon questions are
+distinct texts); without it the scripts use the 900 questions as released.
+
+```
+python3 src/deferred_questions.py data/ --distinct            # Table 1
+python3 src/question_evaluator.py data qwen36uff_think --distinct   # Table 2 (also gemma4uff_think)
+python3 src/new_models.py data/new_models data --distinct     # Table 3
+python3 src/teacher_rounds.py data/teacher/rounds             # Table 4
+python3 src/teacher_stats.py data/teacher                     # Table 5
+python3 src/cost_ratio.py data/games/                         # cost ratio of the switch
+```
+
+The teaching rounds used doomLaya with `agent.py --wait-model --realtime 0` and `switch.py --mode maestro`
+(`src/teacher_round.sh`); the teacher was Gemma 4 31B or DeepSeek V4.1 Flash through Ollama. Students were
+fine-tuned with doomLaya's `training/finetune.py` (`--encoder-last 3`, learning rate 1e-4, five epochs; up to fifteen for two runs).
+Frames and videos of the rounds are not included.
 
 ## Citation
 

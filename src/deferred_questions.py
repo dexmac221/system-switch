@@ -1,4 +1,4 @@
-"""What the thinker faces on the questions an actor defers (analysis added after the paper, November 2026).
+"""What the thinker faces on the questions an actor defers (System Switch II, Section 4; added November 2026).
 
 For each actor (fixed option order, 600 command questions) the least confident R% of its decisions are
 deferred to the thinker. On the deferred questions we report the thinker's accuracy, its difference from
@@ -8,7 +8,9 @@ errors, and the net gain over the actor alone. Intervals: 95% percentile bootstr
 settings, and rank correlations of the actors' AUROC and calibration (ECE, 15 bins) with the gain over
 random deferral and with the thinker's difference.
 
-Usage: deferred_questions.py data/ [--thinker qwen36uff_think] [--rate 0.30]
+With --distinct, every distinct question text is counted once (the test set repeats questions: see testset.py).
+
+Usage: deferred_questions.py data/ [--thinker qwen36uff_think] [--rate 0.30] [--distinct]
 """
 import argparse, json, os, random
 from collections import defaultdict
@@ -18,16 +20,22 @@ ap.add_argument("data")
 ap.add_argument("--thinker", default="qwen36uff_think")
 ap.add_argument("--rate", type=float, default=0.30)
 ap.add_argument("--n", type=int, default=2000)
+ap.add_argument("--distinct", action="store_true")
 args = ap.parse_args()
 D, R = args.data, args.rate
 ZERO_SHOT = ["laya-base", "kev-0.8b", "laya-typed", "kev-4b", "clef-flash-9b", "lev-4b", "kev-9b", "strands-2b", "julia-1"]
 ACTORS = ZERO_SHOT + ["laya-v3", "doomgemma"]          # laya-gguf is the same model as laya-base
 REASONING = ["qwen36uff_think", "gemma4uff_think"]
-runs = [r["source_run"] for r in json.load(open(f"{D}/test_set/test_900.json"))]
+import os, sys
+sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
+from testset import keep_indices
+test = json.load(open(f"{D}/test_set/test_900.json"))
+runs = [r["source_run"] for r in test]
+KEEP = keep_indices(test, args.distinct)
 
 
 def load(path):
-    return {r["i"]: r for r in map(json.loads, open(path)) if r["kind"] == "command"}
+    return {r["i"]: r for r in map(json.loads, open(path)) if r["kind"] == "command" and r["i"] in KEEP}
 
 
 def auroc(rows):
@@ -79,6 +87,7 @@ def spearman(x, y):
 
 T = load(f"{D}/thinkers/{args.thinker}.jsonl")
 rng = random.Random(0)
+print(f"{len(T)} command questions{' (distinct texts)' if args.distinct else ' (as released)'}")
 print(f"thinker {args.thinker}: {sum(r['right'] for r in T.values()) / len(T):.3f} on all; {R:.0%} deferred; "
       f"intervals resample games ({args.n} resamples)")
 print(f"{'actor':14} {'AUROC':>5}  {'thinker on deferred':>20}  {'difference (points)':>22} {'fixed':>5} {'intro':>5}  "
@@ -108,6 +117,45 @@ z_over = [per_actor[a]["over"] for a in ZERO_SHOT]
 print(f"over the {len(ZERO_SHOT)} zero-shot actors: rank correlation of the gain over random with AUROC "
       f"{spearman([per_actor[a]['auroc'] for a in ZERO_SHOT], z_over):.2f}, with calibration (-ECE) "
       f"{spearman([-per_actor[a]['ece'] for a in ZERO_SHOT], z_over):.2f}")
+
+# interval for the contrast sensitivity vs calibration: resample games, recompute both rank correlations
+def fast_auroc(rs):
+    order = sorted(range(len(rs)), key=lambda j: rs[j]["conf"]); rk = [0.0] * len(rs); j = 0
+    while j < len(order):
+        e = j
+        while e + 1 < len(order) and rs[order[e + 1]]["conf"] == rs[order[j]]["conf"]:
+            e += 1
+        for m in range(j, e + 1):
+            rk[order[m]] = (j + e) / 2 + 1
+        j = e + 1
+    pos = [rk[j] for j in range(len(rs)) if rs[j]["right"]]; npos, nneg = len(pos), len(rs) - len(pos)
+    return (sum(pos) - npos * (npos + 1) / 2) / (npos * nneg) if npos and nneg else 0.5
+
+
+def gain_over_random(rs):
+    n = len(rs); k = round(R * n)
+    d = sorted(range(n), key=lambda j: (rs[j]["conf"], j))[:k]; dd = set(d)
+    acc = sum(r["right"] for r in rs) / n; thk = sum(T[r["i"]]["right"] for r in rs) / n
+    comb = sum(T[rs[j]["i"]]["right"] if j in dd else rs[j]["right"] for j in range(n)) / n
+    return comb - (acc + k / n * (thk - acc))
+
+
+ZR = {a: [r for r in load(f"{D}/actors/fixed_order/{a}.jsonl").values() if r["i"] in T] for a in ZERO_SHOT}
+gm = defaultdict(list)
+for i in T:
+    gm[runs[i]].append(i)
+gm = list(gm.values()); byi = {a: {r["i"]: r for r in ZR[a]} for a in ZERO_SHOT}
+rng2 = random.Random(1); ca, cc, cd = [], [], []
+for _ in range(1000):
+    samp = [i for g in (rng2.choice(gm) for _ in gm) for i in g]
+    au, ec, gn = [], [], []
+    for a in ZERO_SHOT:
+        rs = [byi[a][i] for i in samp]
+        au.append(fast_auroc(rs)); ec.append(-ece(rs)); gn.append(gain_over_random(rs))
+    x, y = spearman(au, gn), spearman(ec, gn); ca.append(x); cc.append(y); cd.append(x - y)
+q = lambda v: (sorted(v)[int(0.025 * len(v))], sorted(v)[int(0.975 * len(v)) - 1])
+print(f"   resampling games (1,000 times): with AUROC [{q(ca)[0]:.2f}, {q(ca)[1]:.2f}], with calibration [{q(cc)[0]:.2f}, {q(cc)[1]:.2f}], "
+      f"difference [{q(cd)[0]:.2f}, {q(cd)[1]:.2f}]")
 
 diffs = []
 for t in REASONING:

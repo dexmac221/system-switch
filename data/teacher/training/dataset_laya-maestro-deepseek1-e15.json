@@ -1,0 +1,72 @@
+{
+ "giri": [
+  "switch/giri/deepseek1"
+ ],
+ "semi": [
+  100,
+  101,
+  102,
+  103,
+  104,
+  105,
+  106,
+  107,
+  108,
+  109,
+  110,
+  111
+ ],
+ "val_semi": [
+  110,
+  111
+ ],
+ "train": 1395,
+ "validation": 289,
+ "tolte_per_tetto": 0,
+ "tetto_tipo": null,
+ "train_tipi": [
+  [
+   "collect",
+   554
+  ],
+  [
+   "exit",
+   431
+  ],
+  [
+   "shoot",
+   200
+  ],
+  [
+   "explore",
+   179
+  ],
+  [
+   "open",
+   31
+  ]
+ ],
+ "val_tipi": [
+  [
+   "collect",
+   165
+  ],
+  [
+   "shoot",
+   55
+  ],
+  [
+   "exit",
+   45
+  ],
+  [
+   "explore",
+   16
+  ],
+  [
+   "open",
+   8
+  ]
+ ],
+ "accordo_allievo_maestro_val": 0.36
+}

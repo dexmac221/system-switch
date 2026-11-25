@@ -20,3 +20,14 @@ server, `laya-gguf` the base through llama.cpp. `qwen36uff` and `gemma4uff` are 
 of Qwen3.6-35B-A3B and Gemma 4 26B-A4B-it.
 
 Videos of the games are not included (several hundred MB).
+
+## Added for System Switch II
+
+| folder | content |
+|---|---|
+| `new_models/` | one line per question for each decision model released after the first paper (`src/eval_decision_models.py`); same fields as `actors/`, plus `x` with each backend's extras; versions, revisions and request settings in `new_models/VERSIONS.md` |
+| `teacher/rounds/<round>/` | the four teaching rounds (`gemma1`, `gemma2`, `deepseek1`, `dagger1`; MAP01, seeds 100–111): `etichette_s<seed>.jsonl`, one line per label (field names in Italian, documented in `src/teacher_rounds.py`), and `progresso.log`, one line per game |
+| `teacher/training/` | the fine-tune log of every student (`<run>.out`: agreement with the teacher on the held-out seeds before training and per epoch) and its data summary |
+| `teacher/eval_games.jsonl` | one line per evaluation game: 12 variants × 18 seeds (48–65), MAP01, 180 s, the game waits for the model |
+| `tables/system-switch-ii/` | the text output of the System Switch II scripts, as distinct questions (`*_distinct.txt`) and as released |
+

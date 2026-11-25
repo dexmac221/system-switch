@@ -1,0 +1,73 @@
+thinker qwen36uff_think (0.584 alone), 440 command questions (distinct texts), 41 games, 11 actors; 30% deferred; cross-validation by games (7 folds), mean of 10 repetitions
+actor           alone random confid. collect e.quest e.actor  e.all e.unseen oracle
+laya-base       0.473  0.506   0.639   0.641   0.630   0.626  0.625    0.623  0.773
+laya-v3         0.632  0.618   0.725   0.739   0.659   0.705  0.666    0.668  0.841
+doomgemma       0.809  0.742   0.798   0.773   0.780   0.767  0.756    0.751  0.895
+kev-0.8b        0.339  0.412   0.466   0.500   0.472   0.497  0.499    0.498  0.639
+laya-typed      0.448  0.489   0.527   0.584   0.606   0.583  0.596    0.596  0.748
+kev-4b          0.484  0.514   0.520   0.589   0.603   0.564  0.606    0.607  0.766
+clef-flash-9b   0.386  0.446   0.427   0.486   0.507   0.467  0.513    0.504  0.666
+lev-4b          0.300  0.385   0.368   0.414   0.421   0.388  0.431    0.421  0.600
+kev-9b          0.470  0.505   0.475   0.557   0.594   0.560  0.593    0.592  0.727
+strands-2b      0.452  0.492   0.443   0.584   0.582   0.547  0.585    0.582  0.727
+julia-1         0.120  0.260   0.255   0.282   0.272   0.256  0.270    0.273  0.420
+mean                   0.488   0.513   0.559   0.557   0.542  0.558    0.556  0.709
+spread across the repetitions (max - min, points, mean over actors): question 2.0, actor 2.6, all 2.0, unseen actor 1.7
+10% deferred: evaluator (all) - confidence, mean over actors +2.7 points (better for 9 of 11 actors)
+30% deferred: evaluator (all) - confidence, mean over actors +4.5 points (better for 8 of 11 actors)
+50% deferred: evaluator (all) - confidence, mean over actors +5.9 points (better for 9 of 11 actors)
+evaluator (all) - confidence at 30%: point estimate and 95% interval (2,000 resamples of games)
+   laya-base       -1.4 [-3.7, +2.4]
+   laya-v3         -5.9 [-9.0, -2.4]
+   doomgemma       -4.2 [-6.9, -1.3]
+   kev-0.8b        +3.3 [-0.5, +7.2]
+   laya-typed      +6.9 [+2.9, +11.4]
+   kev-4b          +8.6 [+3.6, +13.5]
+   clef-flash-9b   +8.6 [+4.9, +12.4]
+   lev-4b          +6.3 [+2.0, +10.5]
+   kev-9b         +11.8 [+6.6, +16.0]
+   strands-2b     +14.2 [+8.8, +19.1]
+   julia-1         +1.6 [-2.4, +5.6]
+   mean            +4.5 [+2.2, +7.0]
+evaluator (all) - collect rule at 30%: point estimate and 95% interval (2,000 resamples of games)
+   laya-base       -1.6 [-4.1, +2.0]
+   laya-v3         -7.3 [-9.7, -4.1]
+   doomgemma       -1.7 [-3.9, +0.5]
+   kev-0.8b        -0.1 [-2.4, +2.8]
+   laya-typed      +1.2 [-1.2, +4.8]
+   kev-4b          +1.8 [-2.1, +5.5]
+   clef-flash-9b   +2.7 [-0.3, +6.2]
+   lev-4b          +1.7 [-2.1, +5.9]
+   kev-9b          +3.6 [+0.1, +6.4]
+   strands-2b      +0.1 [-3.8, +4.0]
+   julia-1         -1.1 [-4.5, +2.1]
+   mean            -0.1 [-1.8, +2.1]
+evaluator (collect rule) - confidence at 30%: point estimate and 95% interval (2,000 resamples of games)
+   laya-base       +0.2 [+0.0, +1.5]
+   laya-v3         +1.4 [-0.8, +3.2]
+   doomgemma       -2.5 [-6.2, +1.5]
+   kev-0.8b        +3.4 [-0.5, +6.4]
+   laya-typed      +5.7 [+2.1, +9.0]
+   kev-4b          +6.8 [+3.4, +10.7]
+   clef-flash-9b   +5.9 [+3.2, +8.9]
+   lev-4b          +4.5 [+2.4, +6.5]
+   kev-9b          +8.2 [+4.1, +11.9]
+   strands-2b     +14.1 [+10.0, +18.1]
+   julia-1         +2.7 [+0.7, +5.0]
+   mean            +4.6 [+3.3, +5.8]
+evaluator (unseen actor) - confidence at 30%: point estimate and 95% interval (2,000 resamples of games)
+   laya-base       -1.6 [-3.8, +2.2]
+   laya-v3         -5.7 [-8.9, -2.5]
+   doomgemma       -4.7 [-7.7, -1.5]
+   kev-0.8b        +3.2 [-0.3, +6.9]
+   laya-typed      +6.8 [+2.8, +11.5]
+   kev-4b          +8.6 [+3.5, +13.4]
+   clef-flash-9b   +7.6 [+4.0, +11.4]
+   lev-4b          +5.3 [+1.3, +9.4]
+   kev-9b         +11.7 [+6.5, +15.9]
+   strands-2b     +13.8 [+8.7, +19.0]
+   julia-1         +1.9 [-1.9, +5.8]
+   mean            +4.3 [+2.1, +6.6]
+largest standardized coefficients, fix minus break (+ pushes to defer, - to keep the actor's answer):
+   chose_shoot -1.56, chose_collect +1.23, opt_collect -0.56, opt_shoot +0.53, pistol_ammo +0.51, actor_doomgemma -0.49, armor +0.43, actor_julia-1 +0.36, conf -0.36, actor_kev-0.8b +0.26, chose_exit +0.24, hp +0.23
+labels over all actor-question pairs: fixes 30.0%, breaks 16.2%

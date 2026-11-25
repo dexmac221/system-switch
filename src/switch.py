@@ -43,8 +43,11 @@ Usage:
             --log switch_map02_s48.jsonl --port 8010
 """
 import argparse
+import base64
 import json
 import math
+import os
+import random
 import re
 import threading
 import time
@@ -56,6 +59,11 @@ from fastapi import FastAPI, HTTPException
 from pydantic import BaseModel
 
 BLOCKED = re.compile(r"Previous command result: (blocked|unavailable)")
+BASICS = (" DOOM basics: a door that does not open usually needs a key of its colour (red, blue or "
+          "yellow card or skull) that you do not have yet: then go and look for the key elsewhere. "
+          "`explore` sends the player to the least explored area: use it when stuck, looping, or when "
+          "the key or the exit you need is not in sight. Collect items only when you need them (low "
+          "health, low ammo, a key). With no immediate threat, head for the exit.")
 CLEAR = "The area in sight is clear of enemies"
 
 
@@ -79,6 +87,14 @@ class Switch:
         self.prev_kills = None
         self.hp_window = deque(maxlen=40)    # (t, hp)
         self.cells = {}                      # grid cell -> first time visited (novelty trigger)
+        # maestro mode
+        self.rng = random.Random(args.seme_sorpresa)
+        self.etichette = open(args.etichette, "a", buffering=1) if args.etichette else None
+        self.fotogrammi = args.fotogrammi
+        if self.fotogrammi:
+            os.makedirs(self.fotogrammi, exist_ok=True)
+        self.n_etichette = 0
+        self.lezioni = deque(maxlen=6)       # the teacher's own last decisions (--maestro-memoria)
 
     # ------------------------------------------------------------------ utils
     def write(self, row):
@@ -182,11 +198,7 @@ class Switch:
                   f"of the available commands to follow for the next seconds. Write `thought` in {lang}, "
                   "first person, at most 25 words, like a player thinking aloud.")
         if a.basics:
-            system += (" DOOM basics: a door that does not open usually needs a key of its colour (red, blue or "
-                       "yellow card or skull) that you do not have yet: then go and look for the key elsewhere. "
-                       "`explore` sends the player to the least explored area: use it when stuck, looping, or when "
-                       "the key or the exit you need is not in sight. Collect items only when you need them (low "
-                       "health, low ammo, a key). With no immediate threat, head for the exit.")
+            system += BASICS
         user = (f"Why you were called: {'; '.join(reasons)}\n\nSituation:\n{state}\n\n"
                 "Available commands:\n" + "\n".join(f"- {k}: {criteria[k]}" for k in keys)
                 + (f"\n\nAlready tried and NOT working (not available now): {', '.join(forbidden)}" if forbidden else "")
@@ -240,6 +252,63 @@ class Switch:
         else:
             print(f"!! thinker error at {t:.1f}s: {row['error']}", flush=True)
 
+    # ---------------------------------------------------------------- teacher
+    def teach(self, state, criteria, frame):
+        """maestro mode: the teacher labels THIS state, synchronously (agent.py --wait-model keeps the game still).
+        Ollama native API: the JSON schema is NOT enforced on cloud models (measured 13 Oct: they answered
+        {"command": "shoot"}), so the format is in the prompt and the answer is checked, with one retry.
+        Returns (answer dict or None, info dict)."""
+        a = self.a
+        keys = list(criteria)
+        hist = "\n".join(f"t={h['t']:.1f}s {h['command']} (conf {h['conf']:.2f})"
+                         + (" -> NOT executed" if h["blocked"] else "") for h in list(self.history)[-10:])
+        vede = bool(frame) and not a.no_image
+        system = ("You are an expert DOOM player teaching a fast reflex player. Look at the situation"
+                  + (" and at the game frame" if vede else "") + " and pick the ONE best command for the next "
+                  "second. Reply with ONE JSON object and nothing else, exactly with these keys: "
+                  '{"thought": "<why, at most 25 words>", "choice": "<one of: ' + ", ".join(keys) + '>"}')
+        if a.basics:
+            system += BASICS
+        mie = ""
+        if a.maestro_memoria:
+            system += (" Stick to your current plan: change command only if the situation clearly changed (a new "
+                       "enemy, you took damage, the target was reached or is no longer available, the route is "
+                       "blocked). Changing your mind every second makes the player go nowhere.")
+            mie = "\n".join(f"t={x['t']:.1f}s {x['choice']}: {x['thought']}" for x in self.lezioni) or "none yet"
+            mie = f"\n\nYOUR OWN recent decisions (oldest first):\n{mie}"
+        user = (f"Situation:\n{state}\n\nAvailable commands:\n" + "\n".join(f"- {k}: {criteria[k]}" for k in keys)
+                + f"\n\nRecent decisions of the reflex player (oldest first):\n{hist or 'none'}" + mie)
+        msg = {"role": "user", "content": user}
+        if vede:
+            msg["images"] = [frame.split(",", 1)[1] if frame.startswith("data:") else frame]
+        body = {"model": a.maestro_model, "stream": False, "think": False, "options": {"temperature": 0.2},
+                "messages": [{"role": "system", "content": system}, msg]}
+        info = {"tentativi": 0, "vede": vede, "token_in": 0, "token_out": 0}
+        started = time.perf_counter()
+        for _ in range(2):
+            info["tentativi"] += 1
+            try:
+                r = self.sess.post(a.maestro + "/api/chat", json=body, timeout=a.maestro_timeout)
+                r.raise_for_status()
+                j = r.json()
+                info["token_in"] += int(j.get("prompt_eval_count") or 0)     # anche i tentativi scartati si pagano
+                info["token_out"] += int(j.get("eval_count") or 0)
+                c = j["message"]["content"]
+                m = re.search(r"\{.*\}", c, re.S)
+                d = json.loads(m.group(0)) if m else {}
+                if d.get("choice") in keys:
+                    info["latency_ms"] = round((time.perf_counter() - started) * 1000)
+                    return {"choice": d["choice"], "thought": str(d.get("thought", ""))[:300]}, info
+                info["scartata"] = c[:200]
+                body["messages"] = body["messages"] + [
+                    {"role": "assistant", "content": c},
+                    {"role": "user", "content": "Not valid. Reply ONLY with the JSON object; choice must be one of: "
+                                                + ", ".join(keys)}]
+            except Exception as e:
+                info["errore"] = f"{type(e).__name__}: {str(e)[:150]}"
+        info["latency_ms"] = round((time.perf_counter() - started) * 1000)
+        return None, info
+
     # ---------------------------------------------------------------- predict
     def predict(self, req):
         a = self.a
@@ -276,7 +345,7 @@ class Switch:
             if a.mode == "narrate":
                 reasons += events
             final, source = cmd["choice"], "actor"
-            plan = self.plan
+            plan = self.plan if a.mode != "maestro" else None
             if plan:
                 if a.commit:
                     # commitment: keep the plan until the executor says it is done or impossible
@@ -312,6 +381,46 @@ class Switch:
                 self.thinking = True
             self.history.append({"t": t, "command": cmd["choice"], "conf": conf, "blocked": blocked})
             self.prev_hp = meta.get("hp", self.prev_hp)
+        if a.mode == "maestro":
+            start = False                       # in maestro mode the teacher answers here, synchronously
+            with self.lock:
+                self.thinking = False
+            tipo = "cancello" if reasons else ("sorpresa" if self.rng.random() < a.sorpresa else None)
+            if tipo:
+                prima = self.lezioni[-1]["choice"] if self.lezioni else None
+                ans, info = self.teach(req.state, criteria, self.frame)
+                if ans:
+                    self.lezioni.append({"t": t, "choice": ans["choice"], "thought": ans["thought"]})
+                info["maestro_prima"] = prima
+                row = {"kind": "etichetta", "t": t, "tipo": tipo, "perche": reasons or ["controllo a sorpresa"],
+                       "maestro_modello": a.maestro_model, "allievo": cmd["choice"], "conf": round(conf, 4),
+                       "allievo_prob": cmd.get("probabilities"), "state": req.state, "questions": req.questions,
+                       "x": meta.get("x"), "y": meta.get("y"), "hp": meta.get("hp"), "kills": meta.get("kills"),
+                       "execution": meta.get("execution"), **info}
+                if ans:
+                    row.update(maestro=ans["choice"], pensiero=ans["thought"],
+                               eseguito="maestro" if tipo == "cancello" else "allievo")
+                    if tipo == "cancello":
+                        final, source = ans["choice"], "maestro"
+                        plan = {"thought": ans["thought"]}
+                    if ans["choice"] != cmd["choice"]:
+                        print(f"🎓 [{t:6.1f}s {tipo}, {info['latency_ms']} ms] allievo {cmd['choice']} -> maestro "
+                              f"{ans['choice']}: {ans['thought']}", flush=True)
+                else:
+                    row.update(maestro=None, eseguito="allievo")
+                if self.fotogrammi and self.frame and self.frame.startswith("data:"):
+                    nome = f"{self.n_etichette:06d}_{t:08.2f}.jpg"
+                    with open(os.path.join(self.fotogrammi, nome), "wb") as fh:
+                        fh.write(base64.b64decode(self.frame.split(",", 1)[1]))
+                    row["fotogramma"] = nome
+                self.n_etichette += 1
+                if self.etichette:
+                    self.etichette.write(json.dumps(row, ensure_ascii=False) + "\n")
+        if source == "maestro":
+            eps = 1e-4
+            probs = {k: (1 - eps * (len(criteria) - 1) if k == final else eps) for k in criteria}
+            out["answers"]["command"] = {**cmd, "choice": final, "probabilities": probs,
+                                         "actor_choice": cmd["choice"], "thought": plan["thought"]}
         if start and a.mode == "rule":
             # Control without any thinking: same gate, same timing, but the "plan" is a fixed
             # rule. If this does as well as `switch`, the thinker adds nothing.
@@ -343,8 +452,19 @@ def main():
     ap.add_argument("--actor", required=True, help="actor /predict URL")
     ap.add_argument("--actor-model", default="llm", help="model name the actor bridge expects")
     ap.add_argument("--thinker", default="http://127.0.0.1:8090", help="OpenAI-compatible vision LLM")
-    ap.add_argument("--mode", choices=["off", "narrate", "switch", "rule", "advise"], default="switch",
-                    help="rule = control: same gate, but a fixed command instead of the thinker")
+    ap.add_argument("--mode", choices=["off", "narrate", "switch", "rule", "advise", "maestro"], default="switch",
+                    help="rule = control: same gate, but a fixed command instead of the thinker; maestro = v2: the "
+                         "gate picks the states a teacher labels (synchronously: run agent.py with --wait-model)")
+    ap.add_argument("--maestro", default="http://127.0.0.1:11435", help="maestro: Ollama URL (native API)")
+    ap.add_argument("--maestro-model", default="gemma4:31b-cloud")
+    ap.add_argument("--maestro-timeout", type=float, default=6.0, help="maestro: seconds per attempt (2 attempts)")
+    ap.add_argument("--maestro-memoria", type=int, choices=[0, 1], default=1,
+                    help="maestro: show the teacher its own last decisions and ask it to keep a plan (0 = gemma1)")
+    ap.add_argument("--sorpresa", type=float, default=0.07,
+                    help="maestro: share of states labelled with the gate CLOSED (the student acts there)")
+    ap.add_argument("--seme-sorpresa", type=int, default=0)
+    ap.add_argument("--etichette", default=None, help="maestro: jsonl with one row per label")
+    ap.add_argument("--fotogrammi", default=None, help="maestro: directory where the labelled frames are saved")
     ap.add_argument("--rule-choice", default="explore", help="rule mode: command to follow when the gate fires")
     ap.add_argument("--rule-hold", type=float, default=3.0, help="rule mode: seconds to follow it")
     ap.add_argument("--lang", default="it")
@@ -392,7 +512,8 @@ def main():
     def health():
         actor = sw.sess.get(args.actor.rsplit("/", 1)[0] + "/health", timeout=5).json()
         return {"status": actor.get("status"), "models": {args.actor_model: actor, "llm": "switch"},
-                "switch": {"mode": args.mode, "thinker": args.thinker, "gate_sys": args.gate_sys}}
+                "switch": {"mode": args.mode, "thinker": args.thinker, "gate_sys": args.gate_sys,
+                           "maestro": args.maestro_model if args.mode == "maestro" else None}}
 
     @app.post("/predict")
     def predict(req: Request):

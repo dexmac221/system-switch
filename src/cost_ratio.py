@@ -1,4 +1,6 @@
-"""Cost ratio rho = c_slow / c_fast of the switch, measured end to end in play (added November 2026).
+"""Cost of a thought relative to the fast loop, measured end to end in play (added November 2026).
+Two ratios: rho as defined by Zhang (arXiv:2610.21160, Eq. 12), the wall-clock time of a slow call over the period at
+which the fast loop steps; and the compute ratio, a slow call over one forward pass of the actor.
 
 c_fast: the actor's median request latency per game (doomLaya's summary.json); c_slow: the latency of
 every thought in the switch logs (games with a language-model thinker; the rule control does not think,
@@ -33,4 +35,5 @@ q = lambda p: S[min(len(S) - 1, int(p * len(S)))]
 print(f"{len(tags)} games with a language-model thinker, {len(S)} thoughts")
 print(f"actor: median {cf:.1f} ms per request; decision period {per:.0f} ms")
 print(f"thought: median {cs / 1000:.1f} s (10th-90th percentile {q(.1) / 1000:.1f}-{q(.9) / 1000:.1f} s)")
-print(f"rho = {cs / cf:.0f} ({q(.1) / cf:.0f}-{q(.9) / cf:.0f}); one thought = {cs / per:.1f} decisions")
+print(f"rho of Zhang's Eq. (12), slow call / period of the fast loop: {cs / per:.1f} ({q(.1) / per:.1f}-{q(.9) / per:.1f})")
+print(f"compute ratio, slow call / actor forward pass: {cs / cf:.0f} ({q(.1) / cf:.0f}-{q(.9) / cf:.0f})")
