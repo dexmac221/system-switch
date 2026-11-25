@@ -49,6 +49,7 @@ Offline results are on 900 held-out questions; 95% intervals resample games.
 | `src/eval_thinker.py`, `src/thinker_fallback.py` | a chat LLM as zero-shot decision maker, with or without reasoning |
 | `src/paper_tables.py`, `src/review_analyses.py`, `src/stats_ci.py`, `src/deferral_curve.py` | every offline table and the figure: accuracy, ECE, AUROC overall and within category, collect bias, deferral, selection on held-out games |
 | `src/summarize_games.py`, `src/thought_stats.py`, `src/loop_metrics.py`, `src/thoughts_to_srt.py` | the closed-loop games: outcomes, thoughts, coverage, closest approach to the exit, doors, thinker load |
+| `src/deferred_questions.py`, `src/cost_ratio.py` | added in November 2026, after the work that cited the paper: what the thinker faces on the questions each actor defers (accuracy there vs. overall, errors fixed and introduced, with intervals that resample games), and the measured cost ratio of a thought to an actor call |
 | `patches/` | `doomLaya-agent.patch` (adds the `llm` model to doomLaya's agent), then `apply_switch_patch.py` (adds `--send-frame`) |
 | `data/` | test set, per-question records of every actor and thinker, switch logs and per-tic positions of every game (see `data/README.md`) |
 
@@ -65,7 +66,8 @@ Offline results are on 900 held-out questions; 95% intervals resample games.
    - `EVAL_DATA=data/test_set/test_900.json bash src/bench_systemone.sh <name> <model.gguf>` for each
      actor;
    - `eval_thinker.py --think --max-tokens 4000 --kind command` for the thinker;
-   - then `paper_tables.py` and `review_analyses.py` on the records.
+   - then `paper_tables.py` and `review_analyses.py` on the records; `deferred_questions.py data/` and
+     `cost_ratio.py data/games/` for the analyses added in November 2026.
 
    The records in `data/` reproduce every table without running any model.
 5. **Closed loop**: `src/pilot.sh <tag> <actor /predict URL> <actor model> <mode> MAP01 <seed> [switch args]`.
