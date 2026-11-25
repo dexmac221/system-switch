@@ -29,5 +29,6 @@ Videos of the games are not included (several hundred MB).
 | `teacher/rounds/<round>/` | the four teaching rounds (`gemma1`, `gemma2`, `deepseek1`, `dagger1`; MAP01, seeds 100–111): `etichette_s<seed>.jsonl`, one line per label (field names in Italian, documented in `src/teacher_rounds.py`), and `progresso.log`, one line per game |
 | `teacher/training/` | the fine-tune log of every student (`<run>.out`: agreement with the teacher on the held-out seeds before training and per epoch) and its data summary |
 | `teacher/eval_games.jsonl` | one line per evaluation game: 12 variants × 18 seeds (48–65), MAP01, 180 s, the game waits for the model |
+| `teacher/eval_decisions.jsonl.gz` | one line per decision in the evaluation games of ten variants (untrained, Laya-v3, the six 5-epoch students, the two second-round students): game time, command type chosen, probability of explore when offered, options, health, whether an enemy or a health item is in sight, and a short hash of the state text; extracted from the games' decision logs |
 | `tables/system-switch-ii/` | the text output of the System Switch II scripts, as distinct questions (`*_distinct.txt`) and as released |
 

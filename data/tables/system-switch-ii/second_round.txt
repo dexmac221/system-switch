@@ -1,0 +1,38 @@
+share of explore decisions by game time (s), pooled over the 18 games still running in each window
+   untrained            0-30:   6% | 30-60:   2% | 60-120:   8% | 120-180:  10%   exits 0/18
+   Laya-v3              0-30:   0% | 30-60:   1% | 60-120:   1% | 120-180:   0%   exits 17/18
+   Gemma run 1          0-30:   7% | 30-60:   6% | 60-120:  11% | 120-180:  14%   exits 16/18
+   Gemma run 2          0-30:   8% | 30-60:  12% | 60-120:  12% | 120-180:   7%   exits 11/18
+   Gemma run 3          0-30:   8% | 30-60:   9% | 60-120:  12% | 120-180:  14%   exits 13/18
+   DeepSeek run 1       0-30:   0% | 30-60:   1% | 60-120:   0% | 120-180:   1%   exits 11/18
+   DeepSeek run 2       0-30:   0% | 30-60:   0% | 60-120:   0% | 120-180:   0%   exits 9/18
+   DeepSeek run 3       0-30:   0% | 30-60:   0% | 60-120:   1% | 120-180:   0%   exits 14/18
+   second round run 1   0-30:   9% | 30-60:  21% | 60-120:  33% | 120-180:  40%   exits 4/18
+   second round run 2   0-30:  19% | 30-60:  23% | 60-120:  43% | 120-180:  57%   exits 0/18
+
+when explore is offered (it is always offered together with exit)
+   untrained            offered  6300; chosen   7%; mean P(explore) 0.11; no enemy in sight: chosen  10% of 4891
+   Laya-v3              offered  2940; chosen   1%; mean P(explore) 0.01; no enemy in sight: chosen   1% of 2099
+   Gemma run 1          offered  4376; chosen   9%; mean P(explore) 0.12; no enemy in sight: chosen  17% of 2402
+   Gemma run 2          offered  4902; chosen  10%; mean P(explore) 0.13; no enemy in sight: chosen  21% of 2311
+   Gemma run 3          offered  4632; chosen  11%; mean P(explore) 0.12; no enemy in sight: chosen  21% of 2345
+   DeepSeek run 1       offered  4908; chosen   0%; mean P(explore) 0.03; no enemy in sight: chosen   1% of 2606
+   DeepSeek run 2       offered  4925; chosen   0%; mean P(explore) 0.03; no enemy in sight: chosen   1% of 2564
+   DeepSeek run 3       offered  4283; chosen   0%; mean P(explore) 0.03; no enemy in sight: chosen   1% of 2031
+   second round run 1   offered  5882; chosen  28%; mean P(explore) 0.24; no enemy in sight: chosen  39% of 4283
+   second round run 2   offered  6300; chosen  40%; mean P(explore) 0.33; no enemy in sight: chosen  52% of 4862
+
+runs of consecutive explore decisions
+   untrained            median longest run    2; games with a run of 5 or more  0/18
+   Laya-v3              median longest run    0; games with a run of 5 or more  0/18
+   Gemma run 1          median longest run    4; games with a run of 5 or more  4/18; median time of the first  110 s; distinct states in the longest run, median 100%
+   Gemma run 2          median longest run    4; games with a run of 5 or more  5/18; median time of the first   60 s; distinct states in the longest run, median 100%
+   Gemma run 3          median longest run    4; games with a run of 5 or more  4/18; median time of the first   79 s; distinct states in the longest run, median 100%
+   DeepSeek run 1       median longest run    1; games with a run of 5 or more  0/18
+   DeepSeek run 2       median longest run    0; games with a run of 5 or more  0/18
+   DeepSeek run 3       median longest run    0; games with a run of 5 or more  0/18
+   second round run 1   median longest run   14; games with a run of 5 or more 18/18; median time of the first   72 s; distinct states in the longest run, median 100%
+   second round run 2   median longest run   17; games with a run of 5 or more 18/18; median time of the first   25 s; distinct states in the longest run, median 100%
+
+example: the second-round run 1 student on seed 65, its longest run
+   14 explore decisions from 104 to 111 s; health 3; no enemy in sight in 14 of them; options ['exit', 'explore', 'pickup', 'wait']; P(explore) median 0.54; a health item in sight in 3

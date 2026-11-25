@@ -97,6 +97,8 @@ python3 src/new_models.py data/new_models data --distinct     # Table 3
 python3 src/teacher_rounds.py data/teacher/rounds             # Table 4
 python3 src/teacher_stats.py data/teacher                     # Table 5
 python3 src/cost_ratio.py data/games/                         # cost ratio of the switch
+python3 src/second_round.py data/teacher                     # Section 7.4: how the second round fails
+python3 src/figures.py data <output directory>               # Figures 1 and 2
 ```
 
 The teaching rounds used doomLaya with `agent.py --wait-model --realtime 0` and `switch.py --mode maestro`
